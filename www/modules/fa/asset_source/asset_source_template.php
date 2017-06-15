@@ -14,7 +14,7 @@ inoERP
    <li><a href="#tabsHeader-2"><?php echo gettext('Attachments') ?></a></li>
    <li><a href="#tabsHeader-3"><?php echo gettext('Note') ?></a></li>
   </ul>
-  <div class="tabContainer"> 
+  <div class="tabContainer">
    <div id="tabsHeader-1" class="tabContent">
     <ul class="column header_field">
      <li><label><?php echo gettext('Asset Number') ?></label>
@@ -24,11 +24,11 @@ inoERP
       ?>
       <i class="generic g_select_asset_number select_popup clickable fa fa-search" data-class_name="fa_asset"></i>
       <a name="show" href="form.php?class_name=fa_asset_source&<?php echo "mode=$mode"; ?>" class="show document_id fa_asset_id">
-       <i class="fa fa-refresh"></i></a> 
+       <i class="fa fa-refresh"></i></a>
      </li>
-     <li><?php $f->l_text_field_d('type'); ?></li>
-     <li><?php $f->l_text_field_D('description'); ?></li>
-     <li><?php $f->l_text_field_d('status'); ?></li>
+        <li><label><?php echo gettext('Asset Type') ?></label><?php echo $f->text_field('type', $fa_asset->type, '', 'type', '', '', 1); ?></li>
+        <li><label><?php echo gettext('Description') ?></label><?php echo $f->text_field('description', $fa_asset->description, '', 'description', '', '', 1); ?></li>
+        <li><label><?php echo gettext('Status') ?></label><?php echo $f->text_field('status', $fa_asset->status, '', 'status', '', '', 1); ?></li>
     </ul>
    </div>
    <div id="tabsHeader-2" class="tabContent">
@@ -48,7 +48,7 @@ inoERP
      <div id="new_comment">
      </div>
     </div>
-    <div> 
+    <div>
     </div>
    </div>
   </div>
@@ -60,11 +60,11 @@ inoERP
    <li><a href="#tabsLine-1"><?php echo gettext('Operation') ?></a></li>
    <li><a href="#tabsLine-2"><?php echo gettext('Future') ?></a></li>
   </ul>
-  <div class="tabContainer"> 
+  <div class="tabContainer">
    <form action=""  method="post" id="fa_asset_source"  name="fa_asset_source">
     <div id="tabsLine-1" class="tabContent">
      <table class="form_line_data_table">
-      <thead> 
+      <thead>
        <tr>
         <th><?php echo gettext('Action') ?></th>
         <th><?php echo gettext('Asset Source Id') ?></th>
@@ -104,22 +104,22 @@ inoERP
      </table>
 
 
-    </div> 
+    </div>
     <!--end of tab1-->
     <div id="tabsLine-2" class="tabContent">
-     <div class="first_rowset"> 
-      <ul class="column five_column"> 
+     <div class="first_rowset">
+      <ul class="column five_column">
       </ul>
      </div>
      <div class="second_rowset">
 
-     </div> 
+     </div>
      <!--                end of tab2 div three_column-->
     </div>
    </form>
   </div>
  </div>
-</div> 
+</div>
 
 
 <div id="js_data">
