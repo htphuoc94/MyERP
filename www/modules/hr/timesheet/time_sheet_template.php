@@ -45,7 +45,7 @@ inoERP
         echo $f->l_val_field_d('approver_employee_name', 'hr_employee_v', 'employee_name', '', 'vf_select_employee_name employee_name');
         echo $f->hidden_field_withCLass('approver_employee_id', $$class->approver_employee_id, 'hr_employee_id');
         ?><i class="generic g_select_employee_name select_popup clickable fa fa-search" data-class_name="hr_employee_v"></i></li>
-       <li><?php $f->l_date_fieldAnyDay_r('approved_date', $$class->approved_date, 'always_readonly'); ?>             </li>
+       <li><?php $f->l_date_fieldAnyDay_r('approved_date', $$class->approved_date, ''); ?>             </li>
       </ul>
      </div>
     </div>
@@ -129,7 +129,7 @@ inoERP
           ?>
          </td>
          <td><?php $f->seq_field_d($count); ?></td>
-         <td><?php $f->text_field_wid2s('hr_timesheet_line_id', 'always_readonly dontCopy'); ?></td>
+         <td><?php $f->text_field_wid2s('hr_timesheet_line_id', 'dontCopy'); ?></td>
          <td><?php
           $f->val_field_wid2m('project_number', 'prj_project_header', 'project_number', '', 'select project_number');
           echo $f->hidden_field('prj_project_header_id', $$class_second->prj_project_header_id);

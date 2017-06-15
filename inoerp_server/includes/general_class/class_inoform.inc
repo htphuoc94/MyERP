@@ -644,11 +644,11 @@ class inoform {
 
  public function l_gl_period_field_dr($name, $ledger_id) {
   echo '<label>' . gettext(ucwords(str_replace('_', ' ', $name))) . '</label>';
-  echo $this->gl_period_field($name, $ledger_id, $name, 'medium always_readonly', '', 1);
+  echo $this->gl_period_field($name, $ledger_id, $name, 'medium', '', 1);
  }
 
  public function seq_field_d($value) {
-  echo $this->text_field('seq_number', $value, '6', '', 'seq_number always_readonly', '', 1);
+  echo $this->text_field('seq_number', $value, '6', '', 'seq_number', '', 1);
  }
 
  public function seq_field_detail_d($value) {
