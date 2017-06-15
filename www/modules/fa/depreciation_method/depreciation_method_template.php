@@ -18,8 +18,8 @@
           <i class="fa fa-refresh"></i></a> 
         </li>
         <li><?php $f->l_text_field_d('depreciation_method'); ?> </li>
-        <li><?php $f->l_select_field_from_array('method_type', fa_depreciation_method::$method_type_a, $$class->method_type, 'method_type', '', 1, $readonly1); ?></li>
-        <li><?php $f->l_select_field_from_array('calculation_basis', fa_depreciation_method::$calculation_basis_a, $$class->calculation_basis, 'calculation_basis', '', 1, $readonly1); ?></li>
+        <li><?php $f->l_select_field_from_array('method_type', fa_depreciation_method::$method_type_a, $$class->method_type, 'method_type', '', 1, null); ?></li>
+        <li><?php $f->l_select_field_from_array('calculation_basis', fa_depreciation_method::$calculation_basis_a, $$class->calculation_basis, 'calculation_basis', '', 1, null); ?></li>
         <li><?php $f->l_text_field_dm('description'); ?></li>
         <li><?php $f->l_text_field_dm('life_month'); ?> </li>
         <li><?php $f->l_number_field('reducing_balance_rate', $$class->reducing_balance_rate); ?> </li>

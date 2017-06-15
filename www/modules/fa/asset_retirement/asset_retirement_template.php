@@ -29,7 +29,7 @@
         <a name="show" href="form.php?class_name=fa_asset_retirement&<?php echo "mode=$mode"; ?>" class="show2 action document_id fa_asset_retirement_with_asset_book"><i class="fa fa-refresh"></i></a> 
        </li>
        <li><?php $f->l_text_field_dr('asset_description', 'description'); ?></li>
-       <li><?php $f->l_text_field_dr('status', 'always_readonly'); ?></li>
+       <li><?php $f->l_text_field_dr('status', ''); ?></li>
        <li><?php $f->l_text_field_d('description'); ?></li>
       </ul>
      </div>
@@ -57,7 +57,7 @@
     <div id="tabsHeader-4" class="tabContent">
      <div> 
       <ul class="column header_field">
-       <li><?php $f->l_text_field_dr('gl_journal_header_id', 'always_readonly'); ?></li>
+       <li><?php $f->l_text_field_dr('gl_journal_header_id', ''); ?></li>
        <li><label>Action</label>
         <?php
         echo $f->select_field_from_array('action', fa_asset_retirement::$action_a, '', 'action')
@@ -92,7 +92,7 @@
        <li><?php $f->l_number_field_dm('retired_cost'); ?></li>
        <li><?php $f->l_number_field_d('proceed_of_sales'); ?></li>
        <li><?php $f->l_number_field_d('cost_of_removals'); ?></li>
-       <li><?php $f->l_number_field_dr('adjustment_amount' ,'always_readonly'); ?></li>
+       <li><?php $f->l_number_field_dr('adjustment_amount' ,''); ?></li>
       </ul>
      </div>
     </div> 

@@ -21,7 +21,7 @@
         <li><label><?php echo gettext('Period') ?></label><?php echo $period_stmt; ?> </li>
         <li><?php $f->l_text_field_dm('description'); ?></li>
         <li><?php $f->l_select_field_from_array('status', fa_depreciation_header::$status_a, $$class->status, 'status', '', 1, 1, 1); ?> </li>
-        <li><?php $f->l_text_field_dr('gl_journal_header_id', 'always_readonly'); ?></li>
+        <li><?php $f->l_text_field_dr('gl_journal_header_id', ''); ?></li>
        </ul>
 
       </div>
