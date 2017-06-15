@@ -81,14 +81,16 @@ class fa_asset_book_info extends dbObject {
   'salvage_value_percentage',
   'original_cost',
   'current_cost',
+  'new_current_cost',
   'ytd_depreciation',
   'accumulated_depreciation',
  ];
  public $requiredField = [
   'fa_asset_book_id',
   'fa_asset_id',
-  'original_cost',
-  'current_cost',
+  'new_current_cost',
+//  'original_cost',
+//  'current_cost',
  ];
  public $fields_inForm_notInDataBase = [
   'ytd_depreciation',
@@ -139,6 +141,11 @@ class fa_asset_book_info extends dbObject {
  public $action;
 
  public function _before_save() {
+     
+  if (empty($this->new_current_cost) && empty($this->original_cost)) {
+    
+  }
+  
   if (!empty($this->action)) {
    $this->_do_action();
   }
@@ -151,6 +158,11 @@ class fa_asset_book_info extends dbObject {
   if (!empty($this->new_current_cost)) {
    $this->_costChange_trnx();
    $this->current_cost = $this->new_current_cost;
+  }
+  
+  if (empty($this->original_cost) && !empty($this->new_current_cost)) {
+//   $this->_costChange_trnx();
+   $this->original_cost = $this->new_current_cost;
   }
  }
 
