@@ -29,13 +29,13 @@
        </li>
        <li><?php $f->l_text_field_d('description'); ?></li>
        <li><?php $f->l_text_field_d('referece') ?>        </li> 
-       <li><?php $f->l_select_field_from_array('status', fa_asset_book_info::$status_a, $$class->status, 'status' ,  'always_readonly' , '', 1); ?></li>
+       <li><?php $f->l_select_field_from_array('status', fa_asset_book_info::$status_a, $$class->status, 'status' ,  '' , '', 0); ?></li>
       </ul>
      </div>
     </div>
     <div id="tabsHeader-2" class="tabContent">
      <ul class="column header_field">
-      <li><?php $f->l_select_field_from_object('fa_depreciation_method_id', fa_depreciation_method::find_all(), 'fa_depreciation_method_id', 'depreciation_method', $$class->fa_depreciation_method_id, 'fa_depreciation_method_id', '', 1, $readonly1); ?></li>
+      <li><?php $f->l_select_field_from_object('fa_depreciation_method_id', fa_depreciation_method::find_all(), 'fa_depreciation_method_id', 'depreciation_method', $$class->fa_depreciation_method_id, 'fa_depreciation_method_id', '', 1, ''); ?></li>
       <li><?php $f->l_number_field_d('life_months'); ?></li>
       <li><?php $f->l_checkBox_field_d('depreciation_cb'); ?></li>
 
@@ -84,11 +84,11 @@
     <div id="tabsLine-1" class="tabContent">
      <div class="first_rowset"> 
       <ul class="column header_field two_column_form form_header_l"> 
-       <li><?php $f->l_number_field_dr('original_cost', 'always_readonly'); ?></li>
-       <li><?php $f->l_number_field_dr('current_cost' , 'always_readonly'); ?></li>
+       <li><?php $f->l_number_field_dr('original_cost', ''); ?></li>
+       <li><?php $f->l_number_field_dr('current_cost' , ''); ?></li>
        <li><?php $f->l_number_field('new_current_cost' , ''); ?></li>
-       <li><?php $f->l_number_field_dr('ytd_depreciation', 'always_readonly'); ?></li>
-       <li><?php $f->l_number_field_dr('accumulated_depreciation', 'always_readonly'); ?></li>
+       <li><?php $f->l_number_field_dr('ytd_depreciation', ''); ?></li>
+       <li><?php $f->l_number_field_dr('accumulated_depreciation', ''); ?></li>
        <li><?php $f->l_number_field_d('salvage_value_percentage'); ?></li>
        <li><?php $f->l_number_field_d('salvage_value_amount'); ?></li>
        <li><?php $f->l_number_field_d('recoverable_amount'); ?></li>
