@@ -53,7 +53,7 @@ if (!empty($_GET['class_name'])) {
 
  //start search
  $search_array = $$class->field_a;
-// pa($search_array);
+ pa($search_array);
  global $search_result_statement;
 
  //pre populate
@@ -270,10 +270,10 @@ if (!empty($_GET['class_name'])) {
 		}
 	 }
 	}
-
-//  echo "<br><br><br> sql is $sql and per page is $per_page";
+// pa($sql);
+  //echo "<br><br><br> sql is $sql and per page is $per_page"; die($sql);
 	
-	  //change mode for search
+	  //change mode for search	  
  $class_first = $class;
  if (!empty($_SESSION['user_roles'])) {
 	if (in_array('ADMIN', $_SESSION['user_roles'])) {
@@ -293,10 +293,10 @@ if (!empty($_GET['class_name'])) {
 	$mode = 2;
  }
 
- $s->access_level = $access_level;
-$search_result = $class::find_by_sql($sql);
-
-//  pa($search_result);
+ $s->access_level = $access_level; 
+ $search_result = $class::find_by_sql($sql);
+ 
+  //pa($search_result);
  }
 
 

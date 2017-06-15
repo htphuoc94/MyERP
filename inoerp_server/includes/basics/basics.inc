@@ -121,6 +121,8 @@ require_once(INC_EXTENSIONS . DS . "file" . DS . "class_extn_file.inc");
  require_once(INC_MODULE . DS . 'ap' . DS . "supplier_bu" . DS . "class_supplier_bu.inc");
  require_once(INC_MODULE . DS . 'ap' . DS . "supplier" . DS . "class_supplier_all_v.inc");
  require_once(INC_MODULE . DS . "wip" . DS . "wo" . DS . "class_ra_wip.inc");
+ require_once(INC_MODULE . DS . "wip" . DS . "wo" . DS . "class_wip_wo_header.inc");
+  require_once(INC_MODULE . DS . "wip" . DS . "wo" . DS . "class_wip_wo_bom.inc");
  require_once(INC_MODULE . DS . "wip" . DS . "wo" . DS . "work_bench" . DS . "class_wip_wo_work_bench.inc");
  require_once(INC_MODULE . DS . "wip" . DS . "wo" . DS . "work_bench" . DS . "class_wip_wo_work_bench_line.inc");
  require_once(INC_MODULE . DS . "fp" . DS . "mrp_existing" . DS . "class_fp_mrp_existing_supply_v.inc");

@@ -15,7 +15,7 @@
   </div>
  <?php } ?>
  <div id="scrollElement">
-  <div id="print">
+  <div id="print">  
    <div id="search_result"> <?php echo!(empty($search_result_statement)) ? $search_result_statement : ""; ?></div>
   </div>
  </div>
