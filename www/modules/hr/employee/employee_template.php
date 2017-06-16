@@ -111,7 +111,7 @@
         <li><?php $f->l_text_field_d('tax_reg_number'); ?> 					</li>
         <li><?php $f->l_text_field_d('social_ac_no'); ?> 					</li>
         <li><?php $f->l_text_field_d('social_ac_no2'); ?> 					</li>
-        <li><?php $f->l_text_field_d('bank_account_id'); ?> 					</li>
+        <li><?php $f->l_ac_field_d('bank_account_id'); ?> 					</li>
         <li><?php $f->l_ac_field_d('expense_ac_id'); ?> 					</li>
         <li><?php $f->l_ac_field_dm('salary_ac_id'); ?> 					</li>
        </ul> 
