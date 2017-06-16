@@ -84,7 +84,7 @@
     <div id="tabsLine-1" class="tabContent">
      <div class="first_rowset"> 
       <ul class="column header_field two_column_form form_header_l"> 
-       <li><?php $f->l_number_field_dr('original_cost', ''); ?></li>
+       <li><?php $f->l_number_field_dr('original_cost' , ''); ?></li>
        <li><?php $f->l_number_field_dr('current_cost' , ''); ?></li>
        <li><?php $f->l_number_field('new_current_cost' , ''); ?></li>
        <li><?php $f->l_number_field_dr('ytd_depreciation', ''); ?></li>

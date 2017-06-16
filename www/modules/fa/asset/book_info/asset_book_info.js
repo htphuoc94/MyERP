@@ -24,7 +24,7 @@ setValFromSelectPage.prototype.setVal = function () {
 
  if (this.fa_asset_book_info_id) {
   $("a.show.fa_asset_book_info_id").trigger('click');
- }
+ } 
 };
 
 $(document).ready(function () {
@@ -49,7 +49,7 @@ $(document).ready(function () {
 
  $('body').on('blur', '#current_cost', function () {
   if (!$('#fa_asset_book_info_id').val()) {
-   $('#original_cost').val($(this).val());
+        $('#original_cost').val($(this).val());
   }
  });
 
@@ -71,5 +71,13 @@ $(document).ready(function () {
            $('#recoverable_amount').val(recoverable_amount);
           }
          });
+ $(".new_current_cost").change(function () {
+    var t = $(".new_current_cost").val();
+//    $(".current_cost").val(t) ;
+    if($(".original_cost").val()==""){
+        $(".original_cost").val(t) ;
+        $(".current_cost").val(t) ;
+    }
+ });
 
 });
