@@ -43,6 +43,7 @@ inoERP
       <?php
       $reference_table = 'fa_asset';
       $reference_id = $fa_asset->fa_asset_id;
+
       ?>
      </div>
      <div id="new_comment">
@@ -71,7 +72,11 @@ inoERP
         <th><?php echo gettext('Source Type') ?></th>
         <th><?php echo gettext('Line') ?>#</th>
         <th><?php echo gettext('Legacy Invoice') ?>#</th>
-        <th><?php echo gettext('AP Trnx Line Id') ?></th>
+        <th>
+            <?php
+           echo gettext('AP Trnx Line Id');
+            ?>
+        </th>
         <th><?php echo gettext('Reference') ?></th>
         <th><?php echo gettext('Line Amount') ?></th>
        </tr>
@@ -91,9 +96,12 @@ inoERP
          <td><?php $f->text_field_wid('source_type') ?></td>
          <td><?php $f->text_field_wid('line_number') ?></td>
          <td><?php $f->text_field_wid('legacy_invoice_num') ?></td>
-         <td><?php $f->text_field_wid('ap_transaction_line_id') ?></td>
+         <td>  <?php    echo $f->val_field_wid2('ap_transaction_line_id', 'fa_transaction_line', 'ap_transaction_line_id','','');
+             echo $f->hidden_field_withCLass('ap_transaction_line_id', '', 'ap_transaction_line_id');
+
+          ?><i class="generic g_select_ap_transaction_line select_popup clickable fa fa-search" data-class_name="ap_transaction_line"></i></td>
          <td><?php $f->text_field_wid('reference_bumber') ?></td>
-         <td><?php $f->text_field_widm('line_amount') ?></td>
+         <td><?php $f->text_field_wid2('gl_inv_line_price'); ?></td>
         </tr>
         <?php
         $detailCount++;

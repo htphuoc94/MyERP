@@ -52,6 +52,11 @@ class ap_transaction_line extends dbObject {
   'inv_unit_price',
   'inv_line_price',
  ];
+ public $initial_search=[
+     'ap_transaction_line_id',
+     'item_name',
+     'item_description',
+ ];
  public $fields_inForm_notInDataBase = [
   "transaction_number",
   "item_number",
@@ -209,7 +214,7 @@ class ap_transaction_line extends dbObject {
    $ap_th->header_amount += $this->inv_line_price;
    $ap_th->tax_amount += $this->tax_amount;
    $ap_th->save();
-   
+
   }
  }
 
@@ -218,7 +223,7 @@ class ap_transaction_line extends dbObject {
    $this->_create_transaction_details();
   }
   if (!empty($this->tax_amount)) {
-   //verify if detail line exists for tax, if not add. 
+   //verify if detail line exists for tax, if not add.
    $this->_validate_tax_detail_line();
   }
  }
@@ -320,7 +325,7 @@ class ap_transaction_line extends dbObject {
   $sql1 = " CREATE TEMPORARY TABLE tmptable SELECT * FROM ap_transaction_line WHERE `ap_transaction_line_id` = '{$ap_transaction_line_id}' ";
   if ($db->query($sql1)) {
    $sql2 = "  UPDATE tmptable SET `ap_transaction_line_id` = '' ,
-           `org_id` = '{$this->org_id}' 
+           `org_id` = '{$this->org_id}'
           WHERE `ap_transaction_line_id` = '{$ap_transaction_line_id}' ";
    if ($db->query($sql2)) {
     $sql3 = " INSERT INTO `ap_transaction_line` SELECT * FROM tmptable WHERE `ap_transaction_line_id` = '' ";
