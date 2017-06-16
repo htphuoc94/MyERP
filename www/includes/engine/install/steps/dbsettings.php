@@ -3,7 +3,7 @@ $proceed = true;
 ?>
 <div id="installation_header">
  <div class="page-header">
-  <h1>inoERP installation <small>Database Settings (Step 2)</small></h1>
+  <h1>MyERP installation <small>Database Settings (Step 2)</small></h1>
  </div>
 </div>
 <form action=""  method="post" id="dbsettings"  name="dbsettings" >

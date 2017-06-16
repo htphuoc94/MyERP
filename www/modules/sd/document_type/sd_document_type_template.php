@@ -1,10 +1,10 @@
 <!-- * 
-inoERP
+MyERP
  *
  * @copyright   2014 Nishit R. Das
  * @license     https://www.mozilla.org/MPL/2.0/
  * @link        http://inoideas.org
- * @source code https://github.com/inoerp/inoERP
+ * @source code https://github.com/MyERP/MyERP
 -->
 <form  method="post" id="sd_document_type"  name="sd_document_type" class="form_header_l">
  <span class="heading"><?php echo gettext('Sales Document Type') ?></span>

@@ -1,4 +1,4 @@
-inoERP 0.5.1 High Level Plan
+MyERP 0.5.1 High Level Plan
 -----------------------------
 - Process Manufacturing
 	Formula
@@ -8,7 +8,7 @@ inoERP 0.5.1 High Level Plan
 
 
 
-inoERP 0.4.1  | 01-Feb-2016
+MyERP 0.4.1  | 01-Feb-2016
 -------------------------------
 
 - Quality
@@ -60,7 +60,7 @@ inoERP 0.4.1  | 01-Feb-2016
 Release 0.4.1	15-Oct-2015
 
 
-inoERP 0.3.1  | 12-April-2015
+MyERP 0.3.1  | 12-April-2015
 -----------------------------
 - Fixed Asset Enhancements
 	Asset Component
@@ -162,7 +162,7 @@ Service Help Desk
 			   
 			   
 			   
-inoERP 0.2.1  | 12-April-2015
+MyERP 0.2.1  | 12-April-2015
 ----------------------------- 
 - A new module on Point of Sales is added
     POS Transaction
@@ -235,7 +235,7 @@ Asset Maintenance
 
 
 
-inoERP 0.1.2  | 31-Dec-2014
+MyERP 0.1.2  | 31-Dec-2014
 ------------------------
 First release for production usage
 Modules / Extensions included in this versions are :
@@ -798,6 +798,6 @@ Detailed Feature List
         Search Paths
         collections
 
-inoERP 0.1.0 | 07-Dec-2012
+MyERP 0.1.0 | 07-Dec-2012
 ------------------------- 
 First release

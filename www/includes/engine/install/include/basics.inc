@@ -1,7 +1,7 @@
 <?php
 
-require_once __DIR__ . "/../../../../../inoerp_server/includes/functions/functions.inc";
-require_once __DIR__ . '/../../../../../inoerp_server/define_const.inc';
+require_once __DIR__ . "/../../../../../MyERP_server/includes/functions/functions.inc";
+require_once __DIR__ . '/../../../../../MyERP_server/define_const.inc';
 defined('DS') ? null : define('DS', DIRECTORY_SEPARATOR);
 
 defined('SHOW_COTENT_LIST') ? null : define('SHOW_COTENT_LIST', 0); //show content list when requested content not found 1 for true 2 for false
@@ -40,7 +40,7 @@ require_once(INC_CLASS . DS . "class_dbc.inc");
 require_once(INC_CLASS . DS . "class.form.inc");
 require_once(INC_CLASS . DS . "class_inoform.inc");
 
-require_once __DIR__ . '/../../../../../inoerp_server/locale/gettext.inc';
+require_once __DIR__ . '/../../../../../MyERP_server/locale/gettext.inc';
 $locale = (isset($_SESSION['lang'])) ? $_SESSION['lang'] : DEFAULT_LOCALE;
 $encoding = 'UTF-8';
 T_setlocale(LC_MESSAGES, $locale);

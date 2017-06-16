@@ -5,11 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 	<?php
 	if (!empty($metaname_description)) {
-	 echo "<meta name='description' content=\"inoERP - A Open Source PHP based Enterprise Management System\">";
+	 echo "<meta name='description' content=\"MyERP - A Open Source PHP based Enterprise Management System\">";
 	}
 	?>
   <meta name="keywords" content="ERP,PHP ERP,Open Source ERP ">
-  <title><?php echo isset($pageTitle) ? $pageTitle . ' - inoERP!' : ' inoERP! ' ?></title>
+  <title><?php echo isset($pageTitle) ? $pageTitle . ' - MyERP!' : ' MyERP! ' ?></title>
   <link rel="shortcut icon" type="image/x-icon" href="files/favicon.ico">
   <link href="<?php echo THEME_URL; ?>/public.css" media="all" rel="stylesheet" type="text/css" />
   <link href="<?php echo THEME_URL; ?>/menu.css" media="all" rel="stylesheet" type="text/css" />
@@ -103,7 +103,7 @@
 			echo HOME_URL;
 			echo!empty($si->logo_path) ? $si->logo_path : 'files/logo.png'
 			?>" class="logo_image" alt="logo"/>
-      <a href="<?php echo HOME_URL; ?>" class="navbar-brand"><?php echo!empty($si->site_name) ? $si->site_name : 'inoERP'; ?></a>
+      <a href="<?php echo HOME_URL; ?>" class="navbar-brand"><?php echo!empty($si->site_name) ? $si->site_name : 'MyERP'; ?></a>
      </div>
      <div id="navbar-collapse-1" class="navbar-collapse collapse navbar-right"> <?php echo $menu_line->show_menu_list(1); ?></div>
     </div>

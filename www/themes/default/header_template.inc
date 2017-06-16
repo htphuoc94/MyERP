@@ -7,7 +7,7 @@
   ?>" class="logo_image" alt="logo"/>
   <h2><?php
    echo "<a href=\" " . HOME_URL . "\"> ";
-   echo!empty($si->site_name) ? $si->site_name : 'inoERP';
+   echo!empty($si->site_name) ? $si->site_name : 'MyERP';
    echo "</a>";
    ?>!</h2> </div>
  <div class="header_right">
@@ -15,7 +15,7 @@
    <div class="header_info">
     <ul class="inRow asperWidth"> 
      <li><a href="http://demo.inoideas.org/extensions/user/user_login.php"><?php echo gettext('Demo'); ?></a></li>
-     <li><a href="https://github.com/inoerp/inoerp_v1"><?php echo gettext('Download'); ?></a></li>
+     <li><a href="https://github.com/MyERP/MyERP_v1"><?php echo gettext('Download'); ?></a></li>
      <li><a href="<?php echo HOME_URL; ?>content.php?content_type=documentation&amp;category_id=30"><?php echo gettext('Documentation'); ?></a></li>
      <li><a href="<?php echo HOME_URL; ?>content.php?content_type=forum&amp;category_id=1"><?php echo gettext('Forum'); ?></a></li>
      <li><a href="<?php echo HOME_URL; ?>content.php?mode=2&amp;content_id=197&amp;content_type_id=47"><?php echo gettext('About'); ?></a></li>

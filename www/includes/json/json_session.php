@@ -1,5 +1,5 @@
 <?php require_once __DIR__.'/../basics/wloader.inc';
-include_once(__DIR__.'/../../../inoerp_server/includes/basics/basics.inc'); ?>
+include_once(__DIR__.'/../../../MyERP_server/includes/basics/basics.inc'); ?>
 <?php
 
 if ((!empty($_POST['save_dataInSession'])) && (!empty($_POST['data_name']))) {

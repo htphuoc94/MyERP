@@ -1,10 +1,10 @@
 <!-- * 
-inoERP
+MyERP
  *
  * @copyright   2014 Nishit R. Das
  * @license     https://www.mozilla.org/MPL/2.0/
  * @link        http://inoideas.org
- * @source code https://github.com/inoerp/inoERP
+ * @source code https://github.com/MyERP/MyERP
 -->
 <form method="post" id="am_wo_work_bench"  name="am_wo_work_bench">
  <span class="heading"><?php echo gettext('Work Order Work Bench') ?></span>

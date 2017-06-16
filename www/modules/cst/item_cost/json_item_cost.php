@@ -1,7 +1,7 @@
 <?php 
 
 require_once __DIR__.'/../../../includes/basics/wloader.inc';
-include_once(__DIR__.'/../../../../inoerp_server/includes/basics/basics.inc');
+include_once(__DIR__.'/../../../../MyERP_server/includes/basics/basics.inc');
 
 
 if (($_GET['find_cost_elements'] = 1) && (!empty($_GET['class_name']))) {

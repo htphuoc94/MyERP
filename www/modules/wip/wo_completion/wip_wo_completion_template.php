@@ -1,10 +1,10 @@
 <!-- * 
-inoERP
+MyERP
  *
  * @copyright   2014 Nishit R. Das
  * @license     https://www.mozilla.org/MPL/2.0/
  * @link        http://inoideas.org
- * @source code https://github.com/inoerp/inoERP
+ * @source code https://github.com/MyERP/MyERP
 -->
 <!--create empty form or a single id when search is not clicked and the id is referred from other page -->
 <div id ="form_all"> 

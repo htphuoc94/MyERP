@@ -1,4 +1,4 @@
-All inoERP code is Copyright by the Original Authors as mentioned on COPYRIGHT.txt file.
+All MyERP code is Copyright by the Original Authors as mentioned on COPYRIGHT.txt file.
 An Online Version is available @ http://inoideas.org
 
 This program is free software; you can redistribute it and/or modify

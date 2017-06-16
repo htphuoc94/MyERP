@@ -5,11 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <?php
   if (!empty($metaname_description)) {
-   echo "<meta name='description' content=\"inoERP - A Open Source PHP based Enterprise Management System\">";
+   echo "<meta name='description' content=\"MyERP - A Open Source PHP based Enterprise Management System\">";
   }
   ?>
   <meta name="keywords" content="ERP,PHP ERP,Open Source ERP ">
-  <title><?php echo isset($pageTitle) ? $pageTitle . ' - inoERP!' : ' inoERP! ' ?></title>
+  <title><?php echo isset($pageTitle) ? $pageTitle . ' - MyERP!' : ' MyERP! ' ?></title>
   <link rel="shortcut icon" type="image/x-icon" href="files/favicon.ico">
   <link href="<?php echo THEME_URL; ?>/public.css" media="all" rel="stylesheet" type="text/css" />
   <link href="<?php echo THEME_URL; ?>/menu.css" media="all" rel="stylesheet" type="text/css" />
@@ -180,7 +180,7 @@
       echo HOME_URL;
       echo!empty($si->logo_path) ? $si->logo_path : 'files/logo.png'
       ?>" class="logo_image" alt="logo"/>
-      <a href="<?php echo HOME_URL; ?>" class="navbar-brand"><?php echo!empty($si->site_name) ? $si->site_name : 'inoERP'; ?></a>
+      <a href="<?php echo HOME_URL; ?>" class="navbar-brand"><?php echo!empty($si->site_name) ? $si->site_name : 'MyERP'; ?></a>
      </div>
      <div id="navbar-collapse-1" class="navbar-collapse collapse navbar-right"> <?php echo $menu_line->show_menu_list(1); ?></div>
     </div>
@@ -251,8 +251,8 @@
     <div class="calloutbox-full-mini nocontainer">
      <div class="long-twitter">
       <p class="lead"><i class="fa fa-star"></i>
-       All inoERP code is Copyright by the Original Authors as mentioned on COPYRIGHT.txt file.
-       <br>inoERP is an open Source software; you can redistribute it and/or modify
+       All MyERP code is Copyright by the Original Authors as mentioned on COPYRIGHT.txt file.
+       <br>MyERP is an open Source software; you can redistribute it and/or modify
        it under the terms of the Mozilla Public License Version 2.0 </p>
      </div>
     </div><!-- end calloutbox -->
@@ -280,7 +280,7 @@
        <ul class="menu">
         <li class="active"><a href="#"><?php echo gettext('Terms of Use')?></a></li>
         <li><a href="#"><?php echo gettext('Site Maps')?></a></li>
-        <li><a href="https://github.com/inoerp/inoERP/releases"><?php echo gettext('Releases')?></a></li>
+        <li><a href="https://github.com/MyERP/MyERP/releases"><?php echo gettext('Releases')?></a></li>
         <li><a href="https://www.mozilla.org/MPL/2.0/"><?php echo gettext('MPL 2')?></a></li>
         <li><a href="#"><?php echo gettext('Cookie Preferences')?></a></li>
 

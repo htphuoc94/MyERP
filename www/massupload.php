@@ -7,7 +7,7 @@ if (!empty($_GET['class_name'])) {
 } else {
  $class_names[] = 'path';
  require_once __DIR__.'/includes/basics/wloader.inc';
-include_once(__DIR__.'/../inoerp_server/includes/functions/loader.inc');
+include_once(__DIR__.'/../MyERP_server/includes/functions/loader.inc');
  $path = new path();
  $all_search_paths = $path->findAll_massUplodPaths();
  $search_result_statement = "";
@@ -40,7 +40,7 @@ include_once(__DIR__.'/../inoerp_server/includes/functions/loader.inc');
 if (!empty($class_names)) {
  $class = $class_names;
  require_once __DIR__.'/includes/basics/wloader.inc';
-include_once(__DIR__.'/../inoerp_server/includes/functions/loader.inc');
+include_once(__DIR__.'/../MyERP_server/includes/functions/loader.inc');
  if (empty($access_level) || ($access_level < 3 )) {
   access_denied();
   return;

@@ -1,10 +1,10 @@
 <!-- * 
-inoERP
+MyERP
  *
  * @copyright   2014 Nishit R. Das
  * @license     https://www.mozilla.org/MPL/2.0/
  * @link        http://inoideas.org
- * @source code https://github.com/inoerp/inoERP
+ * @source code https://github.com/MyERP/MyERP
 -->
 <div id='bom_routing_divId'>
  <span class="heading"><?php   echo gettext('Routing Header');   echo!empty($form_name_header) ? ' - ' . gettext($form_name_header) : ' ';   ?></span>

@@ -1,6 +1,6 @@
 <?php
 
- include_once(__DIR__ . '/../inoerp_server/includes/basics/basics.inc');
+ include_once(__DIR__ . '/../MyERP_server/includes/basics/basics.inc');
 $svgimage = new getsvgimage();
 $chart_name = 'PO Analysis';
 $chart_type = 'horizonatl_bar';

@@ -1,4 +1,4 @@
-<?php include_once(__DIR__ . '/../inoerp_server/includes/basics/basics.inc'); ?>
+<?php include_once(__DIR__ . '/../MyERP_server/includes/basics/basics.inc'); ?>
 <script src="<?php echo HOME_URL; ?>include/js/jquery-2.0.3.min.js"></script> 
 <script>
 $(document).ready(function() {

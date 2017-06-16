@@ -6,7 +6,7 @@ $class_names = [
 ?>
 <?php  
 require_once __DIR__.'/includes/basics/wloader.inc';
-include_once(__DIR__.'/../inoerp_server/includes/functions/loader.inc'); ?>
+include_once(__DIR__.'/../MyERP_server/includes/functions/loader.inc'); ?>
 <?php
 //delete comment
 if (!empty($_GET['delete']) && $_GET['delete'] == 1 && !empty($_GET['comment_id'])) {
@@ -27,4 +27,4 @@ if (!empty($_POST)) {
  return;
 }
 ?>
-<?php require_once(__DIR__.'/../inoerp_server/extensions/comment/comment_template.php') ?>
+<?php require_once(__DIR__.'/../MyERP_server/extensions/comment/comment_template.php') ?>

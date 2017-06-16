@@ -19,7 +19,7 @@ Requirements & Installation
 
 1. Change the DB settings @ include\basics\dbsettings.php
 2. Change the session_set_cookie_params  in sessions file
-3. Import the database file @  enine\install\inoerp.sql
+3. Import the database file @  enine\install\MyERP.sql
 4. Change the .htaccess
 5. Login in to the application using user id /password - admin/admin
 

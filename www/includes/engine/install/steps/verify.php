@@ -1,6 +1,6 @@
 <div id="installation_header">
  <div class="page-header">
-  <h1>inoERP installation <small>Requirements (Step 1)</small></h1>
+  <h1>MyERP installation <small>Requirements (Step 1)</small></h1>
 </div>
 </div>
 <ul class="list-unstyled list-group row">

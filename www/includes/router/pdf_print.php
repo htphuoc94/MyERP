@@ -18,9 +18,9 @@
  ?>
  <head>
   <meta charset="utf-8">
-  <title>inoERP Document Print</title>
-  <meta name="description" content="inoERP Document PDF Print">
-  <meta name="inoerp" content="Print">
+  <title>MyERP Document Print</title>
+  <meta name="description" content="MyERP Document PDF Print">
+  <meta name="MyERP" content="Print">
   <link href="<?php echo HOME_URL; ?>tparty/bootstrap/css/bootstrap.css" rel="stylesheet">
   <link href="<?php echo HOME_URL; ?>tparty/bootstrap/css/style.css" rel="stylesheet">
   <link href="<?php echo THEME_URL ?>/public.css" media="all" rel="stylesheet" type="text/css" />

@@ -1,7 +1,7 @@
 <?php
 
-include_once(__DIR__ . '/../inoerp_server/includes/basics/basics.inc');
-$data = "inoERP Print";
+include_once(__DIR__ . '/../MyERP_server/includes/basics/basics.inc');
+$data = "MyERP Print";
 $pdf = new inopdf();
 $pdf->AliasNbPages();
 $pdf->AddPage();

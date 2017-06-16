@@ -1,6 +1,6 @@
 <div id="installation_header">
  <div class="page-header">
-  <h1>inoERP installation <small>Start Installation  (Step 3)</small></h1>
+  <h1>MyERP installation <small>Start Installation  (Step 3)</small></h1>
  </div>
 </div>
 <?php
@@ -38,7 +38,7 @@ try {
 } catch (PDOException $e) {
  $proceed = false;
  if ($_POST['db_type'][0] == 'ORACLE') {
-  die('DB Oracle file not found. inoERP with mySQL and MariaDB are released with open source license. Contact <a href="www.inoideas.org">inoERP</a> team for Oracle database');
+  die('DB Oracle file not found. MyERP with mySQL and MariaDB are released with open source license. Contact <a href="www.inoideas.org">MyERP</a> team for Oracle database');
  }
  print "Data Base Connection Error!: "
   . "<br><span class='error'>" . $e->getMessage() . "</span><h2> Enter the correct database information</h2> ";
@@ -64,7 +64,7 @@ if ($proceed) {
    if (file_exists($ora_db_file)) {
     require_once($ora_db_file);
    } else {
-    die('DB Oracle file not found. inoERP with mySQL and MariaDB are released with open source license. Contact inoERP team for Oracle database');
+    die('DB Oracle file not found. MyERP with mySQL and MariaDB are released with open source license. Contact MyERP team for Oracle database');
    }
    break;
 

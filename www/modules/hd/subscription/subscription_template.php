@@ -1,10 +1,10 @@
 <!-- * 
-inoERP
+MyERP
  *
  * @copyright   2014 Nishit R. Das
  * @license     https://www.mozilla.org/MPL/2.0/
  * @link        http://inoideas.org
- * @source code https://github.com/inoerp/inoERP
+ * @source code https://github.com/MyERP/MyERP
 -->
 <div id ="form_header" class="erp-form"><span class="heading"><?php echo gettext('Membership Application') ?></span>
  <form  method="post" id="hd_subscription_header"  name="hd_subscription_header">

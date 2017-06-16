@@ -1,6 +1,6 @@
 <div id="installation_header">
  <div class="page-header">
-  <h1>inoERP installation <small>Complete Installation  (Step 4)</small></h1>
+  <h1>MyERP installation <small>Complete Installation  (Step 4)</small></h1>
  </div>
 </div>
 <?php
@@ -106,9 +106,9 @@ function getQueriesFromSQLFile($sqlfile) {
 // Temporary variable, used to store current query
 $templine = '';
 if ($_GET['db_type'][0] == 'production') {
- $filename = __DIR__ .'/../inoerp_prod.sql';
+ $filename = __DIR__ .'/../MyERP_prod.sql';
 } else {
- $filename = __DIR__ .'/../inoerp.sql';
+ $filename = __DIR__ .'/../MyERP.sql';
 }
 
 try {
@@ -118,7 +118,7 @@ try {
  echo '<ul class="list-unstyled list-group row">';
  echo "<li class=' alert-success list-group-item' >All tables have been Successfully imported</li>";
  echo "<li class=' alert-success list-group-item' >Verify that the file install.php is removed from home directory. If not, delete it.</li>";
- echo "<li class=' alert-success list-group-item' ><a href='" . HOME_URL . "'>Go to the home page </a> & Login to the system  with default user name/password :inoerp/inoerp and reset the password.</li>";
+ echo "<li class=' alert-success list-group-item' ><a href='" . HOME_URL . "'>Go to the home page </a> & Login to the system  with default user name/password :MyERP/MyERP and reset the password.</li>";
 
  echo '</ul>';
  unlink('install.php');

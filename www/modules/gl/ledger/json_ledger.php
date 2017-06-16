@@ -1,6 +1,6 @@
 <?php
 require_once __DIR__.'/../../../includes/basics/wloader.inc';
-include_once(__DIR__.'/../../../../inoerp_server/includes/basics/basics.inc');
+include_once(__DIR__.'/../../../../MyERP_server/includes/basics/basics.inc');
 
  global $f;
  if ((!empty($_GET['gl_ledger_id'])) && (!empty($_GET['find_ledger_details']))) {

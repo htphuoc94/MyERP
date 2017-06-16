@@ -1,12 +1,12 @@
 <?php
 
 /**
- * inoERP
+ * MyERP
  *
  * @copyright   2014 Nishit R. Das
  * @license     https://www.mozilla.org/MPL/2.0/
  * @link        http://inoideas.org
- * @source code https://github.com/inoerp/inoERP
+ * @source code https://github.com/MyERP/MyERP
  */
 
 /**
@@ -153,15 +153,17 @@ class fa_asset_book_info extends dbObject {
   if (empty($this->status)) {
    $this->status = 1;
   }
+
+
   if (!empty($this->new_current_cost)) {
    $this->_costChange_trnx();
    $this->current_cost = $this->new_current_cost;
   }
-
-//  if (empty($this->original_cost) && !empty($this->new_current_cost)) {
-////   $this->_costChange_trnx();
-//   $this->original_cost = $this->new_current_cost;
-//  }
+  
+  if (empty($this->original_cost) && !empty($this->new_current_cost)) {
+//   $this->_costChange_trnx();
+   $this->original_cost = $this->new_current_cost;
+  }
  }
 
  private function _costChange_trnx() {

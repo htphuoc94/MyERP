@@ -42,11 +42,11 @@ include_once(HOME_DIR.'/includes/functions/loader.inc');
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <?php
   if (!empty($metaname_description)) {
-   echo "<meta name='description' content=\"inoERP - A Open Source PHP based Enterprise Management System\">";
+   echo "<meta name='description' content=\"MyERP - A Open Source PHP based Enterprise Management System\">";
   }
   ?>
   <meta name="keywords" content="ERP,PHP ERP,Open Source ERP ">
-  <title><?php echo isset($pageTitle) ? $pageTitle . ' - inoERP!' : ' inoERP! ' ?></title>
+  <title><?php echo isset($pageTitle) ? $pageTitle . ' - MyERP!' : ' MyERP! ' ?></title>
   <link rel="shortcut icon" type="image/x-icon" href="files/favicon.ico">
   <link href="<?php
 //  echo THEME_URL;
@@ -142,7 +142,7 @@ include_once(HOME_DIR.'/includes/functions/loader.inc');
       echo HOME_URL;
       echo!empty($si->logo_path) ? $si->logo_path : 'files/logo.png'
       ?>" class="logo_image" alt="logo"/>
-      <a href="<?php echo HOME_URL; ?>" class="navbar-brand"><?php echo!empty($si->site_name) ? $si->site_name : 'inoERP'; ?></a>
+      <a href="<?php echo HOME_URL; ?>" class="navbar-brand"><?php echo!empty($si->site_name) ? $si->site_name : 'MyERP'; ?></a>
      </div>
      <div id="navbar-collapse-1" class="navbar-collapse collapse navbar-right"> <?php echo $menu_line->show_menu_list(1); ?></div>
     </div>
@@ -170,7 +170,7 @@ include_once(HOME_DIR.'/includes/functions/loader.inc');
    <div class="container">
     <div class="col-md-6">
      <div class="embed-responsive embed-responsive-16by9">
-      <img src="files/inoerp_dashboard.PNG" class="img-responsive" alt="inoERP Dashboard Image">
+      <img src="files/inoerp_dashboard.PNG" class="img-responsive" alt="MyERP Dashboard Image">
      </div>
 
      <!--  </div><!-- end accordion first -->
@@ -183,7 +183,7 @@ include_once(HOME_DIR.'/includes/functions/loader.inc');
        Mục tiêu của hệ thống MyERP là cung cấp <span class="text-success">một hệ thống kéo động dựa trên các giao dịch tự động </span>(using IOT & RFID)
       </span>
       <span class="heading">MyERP 0.1 </span>
-      MyERP version 0.1 được phát hành ngày 01/05/2017 dựa trên hệ thống mã nguồn mở InoERP
+      MyERP version 0.1 được phát hành ngày 01/05/2017 dựa trên hệ thống mã nguồn mở MyERP
       <br>
       <form action="https://www.google.com" id="cse-search-box" target="_blank">
        <div>

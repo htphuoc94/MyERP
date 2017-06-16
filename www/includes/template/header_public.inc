@@ -1,5 +1,5 @@
 <?php require_once __DIR__.'/../basics/wloader.inc'; 
-require_once __DIR__.'/../../../inoerp_server/includes/basics/basics.inc';
+require_once __DIR__.'/../../../MyERP_server/includes/basics/basics.inc';
 check_browser(); ?>  
 <!DOCTYPE html>
 <html>
@@ -7,11 +7,11 @@ check_browser(); ?>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <?php
   if (!empty($metaname_description)) {
-   echo "<meta name='description' content=\"inoERP - A Open Source PHP based Enterprise Management System\">";
+   echo "<meta name='description' content=\"MyERP - A Open Source PHP based Enterprise Management System\">";
   }
   ?>
   <meta name="keywords" content="ERP,PHP ERP,Open Source ERP ">
-  <title><?php echo isset($pageTitle) ? $pageTitle . ' - inoERP!' : ' inoERP! ' ?></title>
+  <title><?php echo isset($pageTitle) ? $pageTitle . ' - MyERP!' : ' MyERP! ' ?></title>
 	  <link href="<?php echo THEME_URL; ?>/public.css" media="all" rel="stylesheet" type="text/css" />
   <link href="<?php echo THEME_URL; ?>/menu.css" media="all" rel="stylesheet" type="text/css" />
   <link href="<?php echo THEME_URL; ?>/jquery.css" media="all" rel="stylesheet" type="text/css" />
@@ -132,13 +132,13 @@ check_browser(); ?>
       <img src="<?php echo HOME_URL;
        echo!empty($si->logo_path) ? $si->logo_path : 'files/logo.png'
        ?>" class="logo_image" alt="logo"/>
-      <a href="<?php echo HOME_URL; ?>" class="navbar-brand"><?php echo!empty($si->site_name) ? $si->site_name : 'inoERP'; ?></a>
+      <a href="<?php echo HOME_URL; ?>" class="navbar-brand"><?php echo!empty($si->site_name) ? $si->site_name : 'MyERP'; ?></a>
      </div><!-- end navbar-header -->
      <div id="navbar-collapse-1" class="navbar-collapse collapse navbar-right">
       <ul class="nav navbar-nav">
        <li><a href="<?php echo HOME_URL; ?>">Home <div class="arrow-up"></div></a></li>
        <li class="active"><a href="http://demo.inoideas.org/extensions/ino_user/user_login.php" ><?php echo gettext('Demo') ?> <div class="arrow-up"></div></a></li>
-       <li><a href="https://github.com/inoerp/inoERP" ><?php echo gettext('Download') ?> <div class="arrow-up"></div></a></li>
+       <li><a href="https://github.com/MyERP/MyERP" ><?php echo gettext('Download') ?> <div class="arrow-up"></div></a></li>
        <li><a href="<?php echo HOME_URL; ?>content.php?content_type=documentation&amp;category_id=30"><?php echo gettext('Documentation') ?> <div class="arrow-up"></div></a></li><!-- end standard drop down -->
        <li><a href="<?php echo HOME_URL; ?>content.php?content_type=forum&amp;category_id=1"><?php echo gettext('Forum') ?> <div class="arrow-up"></div></a></li>
        <li><a href="<?php echo HOME_URL; ?>content.php?mode=2&amp;content_id=197&amp;content_type_id=47"><?php echo gettext('About') ?> <div class="arrow-up"></div></a> </li><!-- end drop down -->

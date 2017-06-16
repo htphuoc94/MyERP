@@ -1,6 +1,6 @@
 <?php 
 require_once __DIR__.'/../basics/wloader.inc';
-include_once(__DIR__.'/../../../inoerp_server/includes/basics/basics.inc'); ?>
+include_once(__DIR__.'/../../../MyERP_server/includes/basics/basics.inc'); ?>
 <div id="header_top_container" style="display: block;">
  <?php
  $f->form_button_withImage();
@@ -9,7 +9,7 @@ include_once(__DIR__.'/../../../inoerp_server/includes/basics/basics.inc'); ?>
 <?php
 if (!empty($_GET['search_class_name'])) {
 
- require_once __DIR__ . '/../../../inoerp_server/locale/gettext.inc';
+ require_once __DIR__ . '/../../../MyERP_server/locale/gettext.inc';
  $locale = (isset($_SESSION['lang'])) ? $_SESSION['lang'] : DEFAULT_LOCALE;
  $encoding = 'UTF-8';
  T_setlocale(LC_MESSAGES, $locale);

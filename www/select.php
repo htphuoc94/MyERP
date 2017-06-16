@@ -13,7 +13,7 @@ if (!empty($_GET['search_class_name'])) {
  $path_access = -1;
 }
 if (!empty($class_names)) {
- include_once(__DIR__.'/../inoerp_server/includes/functions/loader.inc');
+ include_once(__DIR__.'/../MyERP_server/includes/functions/loader.inc');
  if (empty($access_level) || ($access_level < 2 )) {
   access_denied();
   return;

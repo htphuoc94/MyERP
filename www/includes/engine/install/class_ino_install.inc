@@ -49,7 +49,7 @@
    '_update_action_meassge' => 'Update',
    '_show_view_path' => 1,
   ];
-  public $pageTitle = " Install inoERP "; //page Title
+  public $pageTitle = " Install MyERP "; //page Title
   public $option_lists = [
 //		 'supplier_type' => 'SUPPLIER_TYPE',
   ];

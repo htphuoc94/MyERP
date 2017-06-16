@@ -28,7 +28,7 @@ $class_names[] = 'content';
 ?>
 <?php
 require_once __DIR__.'/includes/basics/wloader.inc';
-include_once(__DIR__.'/../inoerp_server/includes/functions/loader.inc');
+include_once(__DIR__.'/../MyERP_server/includes/functions/loader.inc');
 $pageTitle =  'Home';
 ?>
 <!DOCTYPE html>
@@ -38,11 +38,11 @@ $pageTitle =  'Home';
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <?php
   if (!empty($metaname_description)) {
-   echo "<meta name='description' content=\"inoERP - A Open Source PHP based Enterprise Management System\">";
+   echo "<meta name='description' content=\"MyERP - A Open Source PHP based Enterprise Management System\">";
   }
   ?>
   <meta name="keywords" content="ERP,PHP ERP,Open Source ERP ">
-  <title><?php echo isset($pageTitle) ?  $pageTitle . ' | inoERP '  : ' inoERP  ' ?></title>
+  <title><?php echo isset($pageTitle) ?  $pageTitle . ' | MyERP '  : ' MyERP  ' ?></title>
   <link rel="shortcut icon" type="image/x-icon" href="files/favicon.ico">
   <link href="<?php
 //  echo THEME_URL;
@@ -131,7 +131,7 @@ $pageTitle =  'Home';
 
 
        <div class="callus col-lg-6 col-md-6 col-sm-7 hidden-xs">
-				<span><a class="clickable btn btn-sm btn-primary" href="https://salt.bountysource.com/teams/ino-erp" title="Support Project inoERP">Support inoERP</a></span>
+				<span><a class="clickable btn btn-sm btn-primary" href="https://salt.bountysource.com/teams/ino-erp" title="Support Project MyERP">Support MyERP</a></span>
         <span class="topbar-email"><i class="fa fa-envelope"></i> <a href="<?php echo HOME_URL . 'content.php?mode=9&content_type=web_contact' ?>"><?php echo!empty($si->email) ? $si->email : 'contact@site.org' ?></a></span>
         <span class="topbar-phone"><i class="fa fa-phone"></i> <a href="#"><?php echo!empty($si->phone_no) ? $si->phone_no : '1-111-1111' ?></a></span>
        </div><!-- end callus -->
@@ -148,7 +148,7 @@ $pageTitle =  'Home';
       echo HOME_URL;
       echo!empty($si->logo_path) ? $si->logo_path : 'files/logo.png'
       ?>" class="logo_image" alt="logo"/>
-      <a href="<?php echo HOME_URL; ?>" class="navbar-brand"><?php echo!empty($si->site_name) ? $si->site_name : 'inoERP'; ?></a>
+      <a href="<?php echo HOME_URL; ?>" class="navbar-brand"><?php echo!empty($si->site_name) ? $si->site_name : 'MyERP'; ?></a>
      </div>
      <div id="navbar-collapse-1" class="navbar-collapse collapse navbar-right"> <?php echo $menu_line->show_menu_list(1); ?></div>
     </div>
@@ -176,7 +176,7 @@ $pageTitle =  'Home';
    <div class="container">
     <div class="col-md-6">
      <div class="embed-responsive embed-responsive-16by9">
-      <img src="files/inoerp_dashboard.PNG" class="img-responsive" alt="inoERP Dashboard Image">
+      <img src="files/inoerp_dashboard.PNG" class="img-responsive" alt="MyERP Dashboard Image">
      </div>
 
      <!--  </div><!-- end accordion first -->
@@ -184,18 +184,18 @@ $pageTitle =  'Home';
     </div><!-- end col-lg-6 -->
     <div class="col-md-5 ">
      <div class="release_message">
-      <span class="longHeading">inoERP is an open source web based enterprise management system.
+      <span class="longHeading">MyERP is an open source web based enterprise management system.
        It’s built using open source technologies and has a wide range of features suitable for running 
        various kind of  businesses. <br>
-       The primary objective of inoERP is to provide a <span class="text-success">dynamic pull based automated transaction 
+       The primary objective of MyERP is to provide a <span class="text-success">dynamic pull based automated transaction
         system </span>(using IOT & RFID)
       </span>
-      <span class="heading">inoERP 0.5.1 </span>
-      InoERP version 0.5.1 is released on 13-Sep-2016 , and is now available for download. This version is fully functional and ready for production usage. 
+      <span class="heading">MyERP 0.5.1 </span>
+      MyERP version 0.5.1 is released on 13-Sep-2016 , and is now available for download. This version is fully functional and ready for production usage.
       <br>Read the change log <a href="http://inoideas.org/content/change-log"> here </a> and the commits
-      <a href="https://github.com/inoerp/inoERP/commits/master"> here </a>
-      <br>Download the latest version from  <a href="https://github.com/inoerp/inoERP"> GitHub  </a>, or 
-      <a href="https://sourceforge.net/projects/inoerp/"> Source Forge  </a>
+      <a href="https://github.com/MyERP/MyERP/commits/master"> here </a>
+      <br>Download the latest version from  <a href="https://github.com/MyERP/MyERP"> GitHub  </a>, or
+      <a href="https://sourceforge.net/projects/MyERP/"> Source Forge  </a>
       <br>
       <form action="https://www.google.com" id="cse-search-box" target="_blank">
        <div>
@@ -523,7 +523,7 @@ $pageTitle =  'Home';
     <div class="long-twitter">
      <p class="lead"><i class="fa fa-star"></i>
       All ino ERP code is Copyright by the Original Authors as mentioned on COPYRIGHT.txt file.
-      <br>inoERP is an open Source software; you can redistribute it and/or modify
+      <br>MyERP is an open Source software; you can redistribute it and/or modify
       it under the terms of the Mozilla Public License Version 2.0 </p>
     </div>
    </div><!-- end calloutbox -->
@@ -551,7 +551,7 @@ $pageTitle =  'Home';
       <ul class="menu">
 
        <li><a href="http://inoideas.org/content.php?mode=9&content_type=web_contact">Contact</a></li>
-       <li><a href="https://github.com/inoerp/inoERP/releases">Releases</a></li>
+       <li><a href="https://github.com/MyERP/MyERP/releases">Releases</a></li>
        <li><a href="https://www.mozilla.org/MPL/2.0/">MPL 2</a></li>
        <li><a href="#">Cookie Preferences</a></li>
        <li class="active"><a href="#">Terms of Use</a></li>

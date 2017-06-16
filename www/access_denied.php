@@ -4,7 +4,7 @@ $class_names[] = 'content';
 ?>
 <?php 
 require_once __DIR__.'/includes/basics/wloader.inc';
-include_once(__DIR__ . '/../inoerp_server/includes/functions/loader.inc'); ?>
+include_once(__DIR__ . '/../MyERP_server/includes/functions/loader.inc'); ?>
 <!DOCTYPE html>
 <html><head>
   <link href="<?php echo THEME_URL; ?>/public.css" media="all" rel="stylesheet" type="text/css" />

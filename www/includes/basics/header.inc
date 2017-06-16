@@ -11,9 +11,9 @@ if (!empty($dont_check_login)) {
  <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<meta name="robots" content="noindex">
-	<meta name="description" content="inoERP - A Open Source PHP/C++ based Enterprise Management System">
+	<meta name="description" content="MyERP - A Open Source PHP/C++ based Enterprise Management System">
 	<meta name="keywords" content="ERP,PHP ERP,Open Source ERP ">
-  <title><?php echo isset($pageTitle) ? $pageTitle . ' - inoERP!' : ' inoERP! ' ?></title>
+  <title><?php echo isset($pageTitle) ? $pageTitle . ' - MyERP!' : ' MyERP! ' ?></title>
   <link href="<?php echo THEME_URL; 
 	echo (!empty($content_class))? '/content_layout.css' : '/layout.css' ?>" media="all" rel="stylesheet" type="text/css" />
   <link href="<?php echo THEME_URL; ?>/public.css" media="all" rel="stylesheet" type="text/css" />
@@ -74,7 +74,7 @@ if (!empty($dont_check_login)) {
  		<div class="header_info">
  		 <ul class="inRow asperWidth"> 
  			<li><a href="http://demo.inoideas.org/"><?php echo gettext('Demo') ?></a></li>
-			<li><a href="https://github.com/inoerp/inoerp_v1"><?php echo gettext('Download') ?></a></li>
+			<li><a href="https://github.com/MyERP/MyERP_v1"><?php echo gettext('Download') ?></a></li>
  			<li><a href="<?php echo HOME_URL ?>content.php?content_type=documentation&category_id=30"><?php echo gettext('Documentation') ?></a></li>
  			<li><a href="<?php echo HOME_URL ?>content.php?content_type=forum&category_id=1"><?php echo gettext('Forum') ?></a></li>
  			<li><a href="http://inoideas.org/content.php?mode=2&content_id=197&content_type_id=47"><?php echo gettext('About') ?></a></li>

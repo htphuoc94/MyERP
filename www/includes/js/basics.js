@@ -80,7 +80,7 @@ function getFormDetails(url) {
    }
    var homeUrl = $('#home_url').val();
    if ($(result).find('div#page_title').html()) {
-    $(document).prop('title', $(result).find('div#page_title').html() + ' - inoERP');
+    $(document).prop('title', $(result).find('div#page_title').html() + ' - MyERP');
    }
 
    $(result).find('#js_files').find('li').each(function () {
@@ -4940,7 +4940,7 @@ $(document).ready(function () {
   e.preventDefault();
   if (ino_light) {
    if ($(this).closest('li').data('enterprise') == '1') {
-    alert("Sorry! for technical reasons this feature is available only in the inoERP cloud version.");
+    alert("Sorry! for technical reasons this feature is available only in the MyERP cloud version.");
     return false;
    }
   }

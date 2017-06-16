@@ -9,7 +9,7 @@ $class_names = [
 ?>
 <?php
 require_once __DIR__.'/../basics/wloader.inc';
-include_once(__DIR__.'/../../../inoerp_server/includes/functions/loader.inc');
+include_once(__DIR__.'/../../../MyERP_server/includes/functions/loader.inc');
 $read_access = true;
 //exit script in case of delete statement
 if ((!empty($_GET['delete'])) && ($_GET['delete'] == 1)) {
