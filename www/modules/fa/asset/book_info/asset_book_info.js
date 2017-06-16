@@ -78,6 +78,6 @@ $(document).ready(function () {
         $(".original_cost").val(t) ;
         $(".current_cost").val(t) ;
     }
-    });
+ });
 
 });
