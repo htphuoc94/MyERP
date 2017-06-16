@@ -8,12 +8,12 @@
      <li><a href="#tabsHeader-2"><?php echo gettext('Attachments') ?></a></li>
      <li><a href="#tabsHeader-3"><?php echo gettext('Notes') ?></a></li>
     </ul>
-    <div class="tabContainer"> 
+    <div class="tabContainer">
      <div id="tabsHeader-1" class="tabContent">
       <ul class="column header_field">
        <li><?php $f->l_text_field_dr_withSearch('hr_leave_transaction_id') ?>
         <a name="show" href="form.php?class_name=hr_leave_transaction&<?php echo "mode=$mode"; ?>" class="show document_id hr_leave_transaction_id">
-         <i class="fa fa-refresh"></i></a> 
+         <i class="fa fa-refresh"></i></a>
        </li>
        <li><?php
         echo $f->l_val_field_d('employee_name', 'hr_employee_v', 'employee_name', '', 'vf_select_employee_name employee_name');
@@ -37,7 +37,7 @@
       <div> <?php echo ino_attachement($file) ?> </div>
      </div>
      <div id="tabsHeader-3" class="tabContent">
-      <div> 
+      <div>
        <div id="comments">
         <div id="comment_list">
          <?php echo!(empty($comments)) ? $comments : ""; ?>
@@ -62,18 +62,18 @@
     <ul class="tabMain">
      <li><a href="#tabsLine-1"><?php echo gettext('Leave Details') ?></a></li>
     </ul>
-    <div class="tabContainer"> 
+    <div class="tabContainer">
      <ul class="column header_field">
       <li><?php $f->l_select_field_from_object('leave_type', hr_leave_type::find_all(), 'hr_leave_type_id', 'leave_type', $$class->leave_type, '', '', 1, $readonly); ?></li>
       <li><?php $f->l_date_fieldAnyDay('from_date', $$class->from_date); ?></li>
       <li><?php $f->l_date_fieldAnyDay('to_date', $$class->to_date); ?></li>
       <li><?php $f->l_text_field_d('reason'); ?></li>
       <li><?php $f->l_text_field_d('contact_details'); ?></li>
-      <li><label><?php gettext('No Of Days'); ?></label><?php echo $f->number_field('leave_quantity', $$class->leave_quantity); ?></li>
+      <li><label><?php echo gettext('No Of Days'); ?></label><?php echo $f->number_field('leave_quantity', $$class->leave_quantity); ?></li>
      </ul>
     </div>
-   </div> 
-  </div> 
+   </div>
+  </div>
  </form>
 </div>
 <div id="js_data">
