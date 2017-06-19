@@ -1,12 +1,12 @@
 <?php
 
 /**
- * inoERP
+ * MyERP
  *
  * @copyright   2014 Nishit R. Das
  * @license     https://www.mozilla.org/MPL/2.0/
  * @link        http://inoideas.org
- * @retirement code https://github.com/inoerp/inoERP
+ * @retirement code https://github.com/MyERP/MyERP
  */
 
 /**

@@ -1,6 +1,6 @@
 <? ob_start(); ?>
 <?php require_once __DIR__.'/../basics/wloader.inc'; 
-require_once __DIR__.'/../../../inoerp_server/includes/basics/basics.inc' ?>
+require_once __DIR__.'/../../../MyERP_server/includes/basics/basics.inc' ?>
 <?php $session->redirect_login(); ?>
 <?php $url = $_SERVER['REQUEST_URI']; ?>
 <!--inoEMS - The First Enterprise Management System!-->
@@ -8,7 +8,7 @@ require_once __DIR__.'/../../../inoerp_server/includes/basics/basics.inc' ?>
 <html>
  <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title><?php echo isset($pageTitle) ? $pageTitle . ' - inoERP!' : ' inoERP! ' ?></title>
+  <title><?php echo isset($pageTitle) ? $pageTitle . ' - MyERP!' : ' MyERP! ' ?></title>
   <link href="<?php echo HOME_URL; ?>themes/print.css" media="all" rel="stylesheet" type="text/css" />
  </head>
  <body>

@@ -14,7 +14,7 @@
   $_GET['window_type'] = 'popover';
   
    require_once __DIR__.'/includes/basics/wloader.inc';
-	 include_once(__DIR__.'/../inoerp_server/includes/functions/loader.inc');
+	 include_once(__DIR__.'/../MyERP_server/includes/functions/loader.inc');
   
   $hidden_field_a = [];
   $hidden_field_a['window_type'] = 'popover';

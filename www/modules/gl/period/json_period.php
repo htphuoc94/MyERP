@@ -1,6 +1,6 @@
 <?php 
 require_once __DIR__.'/../../../includes/basics/wloader.inc';
-include_once(__DIR__.'/../../../../inoerp_server/includes/basics/basics.inc');
+include_once(__DIR__.'/../../../../MyERP_server/includes/basics/basics.inc');
 
 
 if ((!empty($_GET['open_next_gl_period'])) && (!empty($_GET['new_gl_calendar_id'])) && (!empty($_GET['ledger_id']))) {

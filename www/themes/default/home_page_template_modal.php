@@ -41,11 +41,11 @@ include_once("includes/functions/loader.inc");
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <?php
   if (!empty($metaname_description)) {
-   echo "<meta name='description' content=\"inoERP - A Open Source PHP based Enterprise Management System\">";
+   echo "<meta name='description' content=\"MyERP - A Open Source PHP based Enterprise Management System\">";
   }
   ?>
   <meta name="keywords" content="ERP,PHP ERP,Open Source ERP ">
-  <title><?php echo isset($pageTitle) ? $pageTitle . ' - inoERP!' : ' inoERP! ' ?></title>
+  <title><?php echo isset($pageTitle) ? $pageTitle . ' - MyERP!' : ' MyERP! ' ?></title>
   <link rel="shortcut icon" type="image/x-icon" href="files/favicon.ico">
   <link href="<?php
 //  echo THEME_URL;
@@ -143,12 +143,12 @@ include_once("includes/functions/loader.inc");
        echo HOME_URL;
        echo!empty($si->logo_path) ? $si->logo_path : 'files/logo.png'
        ?>" class="logo_image" alt="logo"/>
-       <a href="<?php echo HOME_URL; ?>" class="navbar-brand"><?php echo!empty($si->site_name) ? $si->site_name : 'inoERP'; ?></a>
+       <a href="<?php echo HOME_URL; ?>" class="navbar-brand"><?php echo!empty($si->site_name) ? $si->site_name : 'MyERP'; ?></a>
       </div>
       <div id="navbar-collapse-1" class="navbar-collapse collapse navbar-right">
        <ul class="nav nav-pills">
         <li><a href="http://inoideas.org/content/demo" ><?php echo gettext('Demo'); ?> <div class="arrow-up"></div></a></li>
-        <li><a href="https://github.com/inoerp/inoERP" ><?php echo gettext('Download'); ?> <div class="arrow-up"></div></a></li>
+        <li><a href="https://github.com/MyERP/MyERP" ><?php echo gettext('Download'); ?> <div class="arrow-up"></div></a></li>
         <li class="active"><a href="<?php echo HOME_URL; ?>content.php?mode=9&content_type=forum&category_id=7" ><i class="fa fa-comments-o"></i> <?php echo gettext('Ask a Question'); ?> <div class="arrow-up"></div></a></li>
         <li><a href="<?php echo HOME_URL; ?>content.php?content_type=documentation&amp;category_id=30"><?php echo gettext('Documentation'); ?> <div class="arrow-up"></div></a></li><!-- end standard drop down -->
         <li><a href="<?php echo HOME_URL; ?>content.php?content_type=forum&amp;category_id=1"><?php echo gettext('Forum'); ?> <div class="arrow-up"></div></a></li>
@@ -189,7 +189,7 @@ include_once("includes/functions/loader.inc");
    <div class="make-center wow fadeInUp animated" style="visibility: visible;">
     <div class="container">
      <div id="structure">
-      <a class="list-header" href="http://localhost/inoerp/form.php?class_name=po_requisition_header&amp;mode=9">&nbsp;<i class="fa fa-dot-circle-o"></i> &nbsp; <?php echo gettext('Requisition'); ?></a>
+      <a class="list-header" href="http://localhost/MyERP/form.php?class_name=po_requisition_header&amp;mode=9">&nbsp;<i class="fa fa-dot-circle-o"></i> &nbsp; <?php echo gettext('Requisition'); ?></a>
       <div id='form-modal'>
        Form Here
        <div id='mod-structure'> </div>
@@ -273,7 +273,7 @@ include_once("includes/functions/loader.inc");
       <ul class="menu">
 
        <li><a href="http://inoideas.org/content.php?mode=9&content_type=web_contact"><?php echo gettext('Contact'); ?></a></li>
-       <li><a href="https://github.com/inoerp/inoERP/releases"><?php echo gettext('Releases'); ?></a></li>
+       <li><a href="https://github.com/MyERP/MyERP/releases"><?php echo gettext('Releases'); ?></a></li>
        <li><a href="https://www.mozilla.org/MPL/2.0/"><?php echo gettext('MPL 2'); ?></a></li>
        <li><a href="#"><?php echo gettext('Cookie Preferences'); ?></a></li>
        <li class="active"><a href="#"><?php echo gettext('Terms of Use'); ?></a></li>

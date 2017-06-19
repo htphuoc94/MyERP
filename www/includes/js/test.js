@@ -187,7 +187,7 @@ function getSearchResult() {
   var newContent = $(result).find('div#searchResult').html();
   if (newContent) {
    $('#list_contents').append(newContent);
-   $.getScript("http://www.inoideas.com/inoerp/includes/js/reload.js");
+   $.getScript("http://www.inoideas.com/MyERP/includes/js/reload.js");
   }
  }).fail(function () {
   alert("Search Failed");

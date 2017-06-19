@@ -1,6 +1,6 @@
 <div id="installation_header">
  <div class="page-header">
-  <h1>inoERP installation <small>Start Installation  (Step 3)</small></h1>
+  <h1>MyERP installation <small>Start Installation  (Step 3)</small></h1>
  </div>
 </div>
 <?php
@@ -19,7 +19,7 @@ if ($proceed) {
    if (file_exists($ora_db_file)) {
     require_once($ora_db_file);
    } else {
-    die('DB Oracle file not found. inoERP with mySQL and MariaDB are released with open source license. Contact inoERP team for Oracle database');
+    die('DB Oracle file not found. MyERP with mySQL and MariaDB are released with open source license. Contact MyERP team for Oracle database');
    }
    break;
 

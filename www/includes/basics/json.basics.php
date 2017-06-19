@@ -1,7 +1,7 @@
 <?php
 $dont_check_login = true;
 require_once __DIR__.'/wloader.inc';
-include_once(__DIR__.'/../../../inoerp_server/includes/basics/basics.inc');
+include_once(__DIR__.'/../../../MyERP_server/includes/basics/basics.inc');
 ?>
 
 <div id="all_blocks">

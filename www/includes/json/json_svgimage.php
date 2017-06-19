@@ -1,6 +1,6 @@
 <?php 
 require_once __DIR__.'/../basics/wloader.inc';
-include_once(__DIR__."/../../../inoerp_server/includes/basics/basics.inc"); ?>
+include_once(__DIR__."/../../../MyERP_server/includes/basics/basics.inc"); ?>
 <link href="<?php echo HOME_URL; ?>css/getsvgimage.css" media="all" rel="stylesheet" type="text/css" />
 <?php
 if (!empty($_GET['find_result'])) {

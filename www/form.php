@@ -3,9 +3,9 @@ $form_page = true;
 require_once __DIR__.'/includes/basics/wloader.inc';
 if (!empty($_GET['router'])) {
  $router = $_GET['router'];
- $router_file = __DIR__ . "/../inoerp_server/includes/router/$router.php";
+ $router_file = __DIR__ . "/../MyERP_server/includes/router/$router.php";
  if (file_exists($router_file)) {
-  include_once __DIR__ . "/../inoerp_server/includes/router/$router.php";
+  include_once __DIR__ . "/../MyERP_server/includes/router/$router.php";
   return;
  } else {
   die('Access Denied');
@@ -16,7 +16,7 @@ if (!empty($_GET['router'])) {
 
  $class_names = 'ino_generic';
  $type = !empty($_GET['type']) ? $_GET['type'] : null;
- include_once(__DIR__ . '/../inoerp_server/includes/basics/basics.inc');
+ include_once(__DIR__ . '/../MyERP_server/includes/basics/basics.inc');
  
   /*
   * Get all modules in system and  check if module code exists
@@ -42,7 +42,7 @@ if (!empty($_GET['router'])) {
  } else {
   $ino_generic_html = $path->findBy_moduleCode($_GET['module_code'], $type, null);
  }
- include_once(__DIR__ . '/../inoerp_server/includes/functions/loader.inc');
+ include_once(__DIR__ . '/../MyERP_server/includes/functions/loader.inc');
  if (!empty($_GET['window_type']) && $_GET['window_type'] == 'popup') {
   include_once(THEME_DIR . '/popup_main_template.inc');
  } else {
@@ -56,7 +56,7 @@ if (!empty($_GET['router'])) {
 ?>
 <?php
 //$dont_check_login = true;
-include_once(__DIR__ . '/../inoerp_server/includes/functions/loader.inc');
+include_once(__DIR__ . '/../MyERP_server/includes/functions/loader.inc');
 
 //exit script in case of delete statement
 if ((!empty($_GET['delete'])) && ($_GET['delete'] == 1)) {

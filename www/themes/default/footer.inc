@@ -12,8 +12,8 @@
  <div class="calloutbox-full-mini nocontainer">
   <div class="long-twitter">
    <p class="lead"><i class="fa fa-star"></i>
-    All inoERP code is Copyright by the Original Authors as mentioned on COPYRIGHT.txt file.
-    <br>inoERP is an open Source software; you can redistribute it and/or modify
+    All MyERP code is Copyright by the Original Authors as mentioned on COPYRIGHT.txt file.
+    <br>MyERP is an open Source software; you can redistribute it and/or modify
     it under the terms of the Mozilla Public License Version 2.0 </p>
   </div>
  </div><!-- end calloutbox -->
@@ -40,10 +40,10 @@
    <div class="footer-menu">
     <ul class="menu">
        <li><a href="http://inoideas.org/content.php?mode=9&content_type=web_contact">Contact</a></li>
-       <li><a href="https://github.com/inoerp/inoERP/releases">Releases</a></li>
+       <li><a href="https://github.com/MyERP/MyERP/releases">Releases</a></li>
        <li><a href="https://www.mozilla.org/MPL/2.0/">MPL 2</a></li>
-       <li><a href="https://www.facebook.com/inoerp">Facebook</a></li>
-       <li><a href="https://www.linkedin.com/company/inoerp">LinkedIn</a></li>
+       <li><a href="https://www.facebook.com/MyERP">Facebook</a></li>
+       <li><a href="https://www.linkedin.com/company/MyERP">LinkedIn</a></li>
 
     </ul>
    </div>

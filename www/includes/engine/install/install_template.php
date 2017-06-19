@@ -3,7 +3,7 @@
  <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="keywords" content="ERP,PHP ERP,Open Source ERP ">
-  <title>inoERP Installation</title>
+  <title>MyERP Installation</title>
   <script src="<?php echo HOME_URL; ?>js/jquery-2.0.3.min.js"></script>
   <script src="<?php echo HOME_URL; ?>js/jquery-ui.min.js"></script>
   <script src="<?php echo HOME_URL; ?>includes/engine/install/install.js"></script>

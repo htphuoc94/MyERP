@@ -4,12 +4,12 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <?php
   if (!empty($metaname_description)) {
-   echo "<meta name='description' content=\"inoERP - A Open Source PHP based Enterprise Management System\">";
+   echo "<meta name='description' content=\"MyERP - A Open Source PHP based Enterprise Management System\">";
   }
   ?>
   <meta name="keywords" content="ERP,PHP ERP,Open Source ERP ">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-  <title><?php echo isset($pageTitle) ? $pageTitle . ' - inoERP!' : ' inoERP! ' ?></title>
+  <title><?php echo isset($pageTitle) ? $pageTitle . ' - MyERP!' : ' MyERP! ' ?></title>
   <link rel="shortcut icon" type="image/x-icon" href="files/favicon.ico">
   <link href="<?php echo THEME_URL; ?>/public.css" media="all" rel="stylesheet" type="text/css" />
   <link href="<?php echo THEME_URL; ?>/menu.css" media="all" rel="stylesheet" type="text/css" />
@@ -44,7 +44,7 @@
       echo HOME_URL;
       echo!empty($si->logo_path) ? $si->logo_path : 'files/logo.png'
       ?>" class="logo_image" alt="logo"/>
-      <a class="navbar-brand" href="<?php echo HOME_URL; ?>"><?php echo!empty($si->site_name) ? $si->site_name : 'inoERP'; ?></a>
+      <a class="navbar-brand" href="<?php echo HOME_URL; ?>"><?php echo!empty($si->site_name) ? $si->site_name : 'MyERP'; ?></a>
      </div>
      <div id="navbar" class="navbar-collapse collapse col-md-6 navbar-right">
       <ul class="nav navbar-nav navbar-right">
@@ -287,10 +287,10 @@
        <ul class="pull-right">
         <li> | </li>
         <li><a href="http://inoideas.org/content.php?mode=9&content_type=web_contact"><?php echo gettext('Contact')?></a></li>
-        <li><a href="http://inoerp.org/extensions/ino_user/user_login.php"><?php echo gettext('Demo')?></a></li>
-        <li><a href="https://github.com/inoerp/inoERP"><?php echo gettext('Download')?></a></li>
-        <li><a href="http://localhost/inoerp/content.php?content_type=documentation&category_id=30"><?php echo gettext('Documentation')?></a></li>
-        <li><a href="http://localhost/inoerp/content.php?content_type=forum&category_id=1"><?php echo gettext('Forum')?></a></li>
+        <li><a href="http://MyERP.org/extensions/ino_user/user_login.php"><?php echo gettext('Demo')?></a></li>
+        <li><a href="https://github.com/MyERP/MyERP"><?php echo gettext('Download')?></a></li>
+        <li><a href="http://localhost/MyERP/content.php?content_type=documentation&category_id=30"><?php echo gettext('Documentation')?></a></li>
+        <li><a href="http://localhost/MyERP/content.php?content_type=forum&category_id=1"><?php echo gettext('Forum')?></a></li>
         <li><a href="https://www.mozilla.org/MPL/2.0/"><?php echo gettext('MPL 2')?></a></li>
         <li><a href="#"><?php echo gettext('Cookie')?></a></li>
         <li class="active"><a href="#"><?php echo gettext('TOU')?></a></li>

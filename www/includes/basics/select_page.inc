@@ -4,11 +4,11 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <?php
   if (!empty($metaname_description)) {
-   echo "<meta name='description' content=\"inoERP - A Open Source PHP based Enterprise Management System\">";
+   echo "<meta name='description' content=\"MyERP - A Open Source PHP based Enterprise Management System\">";
   }
   ?>
   <meta name="keywords" content="ERP,PHP ERP,Open Source ERP ">
-  <title><?php echo isset($pageTitle) ? $pageTitle . ' - inoERP!' : ' inoERP! ' ?></title>
+  <title><?php echo isset($pageTitle) ? $pageTitle . ' - MyERP!' : ' MyERP! ' ?></title>
   <link href="<?php
 //  echo THEME_URL;
 //  echo (!empty($content_class)) ? '/content_layout.css' : '/layout.css'

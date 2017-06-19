@@ -7,7 +7,7 @@
  */
 
 
-require_once (__DIR__.'/../../../inoerp_server/includes/functions/functions.inc');
+require_once (__DIR__.'/../../../MyERP_server/includes/functions/functions.inc');
 
 $www_dir = dirname(__FILE__). '/../../';
 defined('WWW_DIR') ? null : define('WWW_DIR', $www_dir);
@@ -25,5 +25,5 @@ defined('HOME_URL') ? null : define("HOME_URL", $home_url);
  * 2. Uncomment below 3 line and modify the HOME_DIR and HOME_URL value
  */
 //$protocol_g = ino_protocol();
-//defined('HOME_DIR') ? null : define("HOME_DIR", 'C:\inetpub\wwwroot\inoerp');
-//defined('HOME_URL') ? null : define("HOME_URL", 'http://localhost/inoerp/');
+//defined('HOME_DIR') ? null : define("HOME_DIR", 'C:\inetpub\wwwroot\MyERP');
+//defined('HOME_URL') ? null : define("HOME_URL", 'http://localhost/MyERP/');

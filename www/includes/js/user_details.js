@@ -102,7 +102,7 @@ contextMenuMain.prototype.contextMenu = function()
  menuContent += "<li id='menu_button9_2' class='end_li_type'>Enable</li>";
  menuContent += "<li id='menu_button9_3' class='end_li_type'>View & Update</li>";
  menuContent += "</ul></li>";
- menuContent += "<li id='menu_button10' class='about'>About inoERP</li>";
+ menuContent += "<li id='menu_button10' class='about'>About MyERP</li>";
  menuContent += "<ul>";
  rightClickMenu(menuContent);
 

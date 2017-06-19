@@ -10,7 +10,7 @@ if ((!empty($_GET['class_name'])) && (!empty($_GET['report_name']))) {
 } else {
  $class_names[] = 'path';
  
-include_once(__DIR__.'/../inoerp_server/includes/functions/loader.inc');
+include_once(__DIR__.'/../MyERP_server/includes/functions/loader.inc');
  $path = new path();
  $all_search_paths = $path->findAll_searchPaths();
  $search_result_statement = "";
@@ -39,7 +39,7 @@ include_once(__DIR__.'/../inoerp_server/includes/functions/loader.inc');
 }
 
 if ((!empty($class_names)) && (!empty($report_name))) {
-include_once(__DIR__.'/../inoerp_server/includes/functions/loader.inc');
+include_once(__DIR__.'/../MyERP_server/includes/functions/loader.inc');
  $hidden_field_a = ['report_name' => $report_name];
  $report_parameters = $report_name . '_parameters';
  $s->setProperty('_searching_class', $class);
@@ -86,6 +86,6 @@ include_once(__DIR__.'/../inoerp_server/includes/functions/loader.inc');
 <script type="text/javascript">
  $(document).ready(function () {
    $.getScript("includes/js/erp.js");
-  $("head").append("<link id='getsvgimage' href='http://localhost/inoerp/css/getsvgimage.css' type='text/css' rel='stylesheet' />");
+  $("head").append("<link id='getsvgimage' href='http://localhost/MyERP/css/getsvgimage.css' type='text/css' rel='stylesheet' />");
  });
 </script>

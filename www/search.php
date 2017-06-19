@@ -9,7 +9,7 @@ if (!empty($_GET['search_class_name'])) {
  $class_names = $_GET['class_name'];
 } else {
  $class_names[] = 'path';
- include_once(__DIR__.'/../inoerp_server/includes/functions/loader.inc');
+ include_once(__DIR__.'/../MyERP_server/includes/functions/loader.inc');
  $path = new path();
  $all_search_paths = $path->findAll_searchPaths();
  $search_result_statement = "";
@@ -37,7 +37,7 @@ if (!empty($_GET['search_class_name'])) {
  return;
 }
 if (!empty($class_names)) {
- include_once(__DIR__.'/../inoerp_server/includes/functions/loader.inc');
+ include_once(__DIR__.'/../MyERP_server/includes/functions/loader.inc');
  
   if ($class == 'ino_user' && !empty($_SESSION['user_roles'])) {
 	if (!in_array('ADMIN', $_SESSION['user_roles'])) {
