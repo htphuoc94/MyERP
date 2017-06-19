@@ -14,6 +14,8 @@ class hr_employee_v extends dbObject {
 		 'last_name',
 		 'email',
 		 'status',
+         'job_id',
+		 'position_id',
 		 'identification_id',
 		 'emp_start_date',
 		 'citizen_number',
@@ -50,6 +52,7 @@ class hr_employee_v extends dbObject {
 		 'person_type',
 		 'org_id',
 		 'job_id',
+         'job_name',
 		 'position_id',
 		 'expense_ac_id',
 		 'position_name',
@@ -102,6 +105,7 @@ class hr_employee_v extends dbObject {
  public $person_type;
  public $org_id;
  public $job_id;
+ public $job_name;
  public $position_id;
  public $expense_ac_id;
  public $supervisor_employee_id;
@@ -126,7 +130,7 @@ CREATE OR REPLACE VIEW hr_employee_v
 user_id, username, first_name,last_name,email,hr_employee_id,status,
 identification_id,emp_start_date,citizen_number,emp_first_name,emp_last_name,phone, 
 employee_name,
-emp_email,gender,person_type, org_id, job_id, position_id, expense_ac_id,supervisor_employee_id,
+emp_email,gender,person_type, org_id, job_id,job_name, position_id, expense_ac_id,supervisor_employee_id,
 currency_code, org
 )
 AS
@@ -134,12 +138,12 @@ AS
 user.ino_user_id, user.username, user.first_name,user.last_name,user.email,user.hr_employee_id,user.status,
 he.identification_id,he.start_date,he.citizen_number,he.first_name as emp_first_name,he.last_name as emp_last_name,he.phone, 
 CONCAT(he.last_name, ', ' , he.first_name) as employee_name,
-he.email,he.gender,he.person_type, he.org_id, he.job_id, he.position_id, he.expense_ac_id,he.supervisor_employee_id,
+he.email,he.gender,he.person_type, he.org_id, he.job_id,hr_job.job_name, he.position_id, he.expense_ac_id,he.supervisor_employee_id,
 org_v.currency_code, org_v.org
 FROM hr_employee he
 LEFT JOIN ino_user user ON he.hr_employee_id = user.hr_employee_id
 LEFT JOIN org_v ON org_v.org_id =  he.org_id
-
+LEFT JOIN hr_job hj ON hr_job.job_id=he.job_id
 
 ";
  }
@@ -153,7 +157,7 @@ LEFT JOIN org_v ON org_v.org_id =  he.org_id
  }
 
  public static function find_by_ColumnNameVal($columnName, $columnVal, $dependent_fields = '', $hidden_fields = '') {
-	$sql = " SELECT   user_id,   username,   first_name,   last_name,   email,
+	$sql = " SELECT   user_id,   username,   first_name,   last_name,job_name,  email,
   hr_employee_id,     identification_id,   emp_start_date,   citizen_number,
   emp_first_name,   emp_last_name,    emp_email,   gender,   person_type,  employee_name  ";
 
