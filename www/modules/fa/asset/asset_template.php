@@ -21,7 +21,12 @@
        <li><?php $f->l_select_field_from_array('status', fa_asset::$status_a, $$class->status, 'status'); ?></li>
        <li><?php $f->l_text_field_dm('units'); ?></li>
        <li><?php $f->l_select_field_from_array('type', fa_asset::$type_a, $$class->type, '', '', 1); ?></li>
-       <li><?php $f->l_text_field_d('parent_asset_id'); ?></li>
+       <!--<li><?php // $f->l_text_field_d('parent_asset_id'); ?></li>-->
+       <li><?php
+        echo $f->l_val_field_d('parent_asset_id', 'fa_asset', 'parent_asset_id', '', 'parent_asset_id', 'vf_select_parent_asset_id');
+        echo $f->hidden_field_withId('fa_asset_id', $$class->fa_asset_id);
+        ?><i class="generic g_select_asset_parent_asset_id select_popup clickable fa fa-search" data-class_name="fa_asset"></i>
+       </li>
        <li><?php $f->l_text_field_d('description'); ?></li>
       </ul>
      </div>
@@ -110,7 +115,7 @@
            echo ino_inline_action($fa_asset_assignment->fa_asset_assignment_id, array('fa_asset_id' => $$class->fa_asset_id));
            ?>
           </td>
-          <td><?php form::number_field_wid2sr('fa_asset_assignment_id', 'always_readonly'); ?></td>
+          <td><?php form::number_field_wid2sr('fa_asset_assignment_id', ''); ?></td>
           <td><?php echo $f->number_field('units', $$class_second->units, '', '', 'line_units'); ?></td>
           <td><?php
           echo $f->val_field('employee_name', $$class_second->employee_name, '', '', 'vf_select_member_employee_name', '', '', 'hr_employee_v', 'employee_name');

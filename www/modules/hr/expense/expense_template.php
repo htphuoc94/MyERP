@@ -43,17 +43,17 @@ inoERP
      <div> 
       <ul class="column header_field">
        <li><?php $f->l_select_field_from_object('doc_currency', option_header::currencies(), 'option_line_code', 'option_line_code', $$class->doc_currency, 'doc_currency', '', 1, $readonly); ?></li>
-       <li><?php $f->l_select_field_from_object('currency', option_header::currencies(), 'option_line_code', 'option_line_code', $$class->currency, 'currency', 'currency always_readonly', 1, 1); ?></li>
+       <li><?php $f->l_select_field_from_object('currency', option_header::currencies(), 'option_line_code', 'option_line_code', $$class->currency, 'currency', 'currency', 1, 1); ?></li>
        <li><?php $f->l_select_field_from_object('exchange_rate_type', gl_currency_conversion::currency_conversion_type(), 'option_line_code', 'option_line_code', $$class->exchange_rate_type, 'exchange_rate_type', '', 1, $readonly); ?></li>
        <li><?php $f->l_number_field('exchange_rate', $$class->exchange_rate, '', 'exchange_rate', '', 1, $readonly); ?> </li>
-       <li><?php $f->l_number_field_dr('header_amount', 'always_readonly'); ?></li>
+       <li><?php $f->l_number_field_dr('header_amount', ''); ?></li>
        <li><?php
         echo $f->l_val_field_d('approver_employee_name', 'hr_employee_v', 'employee_name', '', 'vf_select_employee_name employee_name');
         echo $f->hidden_field_withCLass('approved_by_employee_id', $$class->approved_by_employee_id, 'hr_employee_id');
         ?><i class="generic g_select_employee_name select_popup clickable fa fa-search" data-class_name="hr_employee_v"></i></li>
        <li><?php $f->l_text_field_d('purpose'); ?>             </li>
        <li><?php $f->l_text_field_d('reason'); ?>             </li>
-       <li><?php $f->l_date_fieldAnyDay_r('approved_date', $$class->approved_date, 'always_readonly'); ?>             </li>
+       <li><?php $f->l_date_fieldAnyDay_r('approved_date', $$class->approved_date, ''); ?>             </li>
       </ul>
      </div>
     </div>
@@ -135,7 +135,7 @@ inoERP
           ?>
          </td>
          <td><?php $f->seq_field_d($count); ?></td>
-         <td><?php $f->text_field_wid2s('hr_expense_line_id', 'always_readonly dontCopy'); ?></td>
+         <td><?php $f->text_field_wid2s('hr_expense_line_id', 'dontCopy'); ?></td>
          <td><?php $f->text_field_wid2s('line_number', 'lines_number'); ?></td>
          <td><?php echo $f->select_field_from_object('expense_type', hr_expense_tpl_line::find_by_parent_id($$class->expense_template_id), 'hr_expense_tpl_line_id', 'expense_item', $$class_second->expense_type, '', '', 1, '', '', '', '', 'expense_category'); ?></td>
          <td><?php echo $f->date_fieldAnyDay('claim_date', $$class_second->claim_date); ?></td>
@@ -183,7 +183,7 @@ inoERP
          <td><?php echo $f->number_field('mileage_distace', $$class_second->mileage_distace); ?></td>
          <td><?php echo $f->number_field('mileage_rate', $$class_second->mileage_rate); ?></td>
          <td><?php $f->checkBox_field_wid2('original_receipt_missing_cb'); ?></td>
-         <td><?php $f->text_field_wid2r('status', 'always_readonly'); ?></td>
+         <td><?php $f->text_field_wid2r('status', ''); ?></td>
         </tr>
         <?php
         $count = $count + 1;

@@ -75,6 +75,7 @@ class fa_asset extends dbObject {
  ];
  public $initial_search = [
   'fa_asset_id',
+   'parent_asset_id',
  ];
  public $requiredField = [
   'asset_number',

@@ -92,7 +92,7 @@ inoERP
           echo ino_inline_action($fa_asset_source->fa_asset_source_id, array('fa_asset_id' => $fa_asset->fa_asset_id));
           ?>
          </td>
-         <td><?php $f->text_field_widr('fa_asset_source_id', 'always_readonly') ?></td>
+         <td><?php $f->text_field_widr('fa_asset_source_id', '') ?></td>
          <td><?php $f->text_field_wid('source_type') ?></td>
          <td><?php $f->text_field_wid('line_number') ?></td>
          <td><?php $f->text_field_wid('legacy_invoice_num') ?></td>
