@@ -258,7 +258,7 @@ class inosave extends dbObject {
 		}
 		if ($new_entry) {
 		 if (method_exists($$class, '_after_save')) {
-			$$class->_after_save();
+			//$$class->_after_save();
 		 }
 		 $secondary_fields = sys_secondary_field_inst::find_by_referenceKey($class);
 		 if ($secondary_fields) {
