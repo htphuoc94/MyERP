@@ -27,6 +27,7 @@ class hr_team_header extends dbObject {
   'version' => '0.1.1',
   'db_version' => '1001',
   'mod_version' => '1.1.1',
+  'dependent_class' => array('hr_team_line'),
   'primary_entity_cb' => '',
   'module_name' => 'hr',
   'weight' => 22
@@ -63,6 +64,7 @@ class hr_team_header extends dbObject {
   'hr_team_header_id',
   'team_lead_employee_id',
  ];
+
  public $pageTitle = " HR Team "; //page Title
  public $search = [
   '_show_update_path' => 1,

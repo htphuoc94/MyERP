@@ -13,14 +13,17 @@
      <ul class="column header_field">
       <li><?php $f->l_text_field_dr_withSearch('hr_team_header_id') ?>
        <a name="show" href="form.php?class_name=hr_team_header&<?php echo "mode=$mode"; ?>" class="show document_id hr_team_header_id">
-        <i class="fa fa-refresh"></i></a> 
+        <i class="fa fa-refresh"></i></a>
       </li>
       <li><?php $f->l_select_field_from_object('type', hr_team_header::team_type(), 'option_line_code', 'option_line_value', $$class->type, 'type'); ?> </li>
       <li><?php $f->l_text_field_d('team_name'); ?> </li>
-      <li><?php
-       echo $f->l_val_field_d('lead_employee_name', 'hr_employee_v', 'employee_name', '', 'vf_select_lead_employee_name employee_name');
-       echo $f->hidden_field_withId('team_lead_employee_id', $$class->team_lead_employee_id);
-       ?><i class="generic g_select_lead_employee_name select_popup clickable fa fa-search" data-class_name="hr_employee_v"></i></li>
+         <li><label><?php echo gettext('Lead Employee Name') ?></label><?php
+             echo $f->val_field_d('lead_employee_name', 'hr_employee_v', 'employee_name', '', 'vf_select_lead_employee_name employee_name');
+             echo $f->hidden_field_withId('team_lead_employee_id', $$class->team_lead_employee_id);
+             echo $f->hidden_field_withId('hr_employee_id', 'hr_employee_id');
+             ?><i class="generic g_select_lead_employee_name select_popup clickable fa fa-search" data-class_name="hr_employee_v"></i></li>
+
+
       <li><?php $f->l_select_field_from_object('region', hr_team_header::team_region(), 'option_line_code', 'option_line_value', $$class->region, 'region'); ?> </li>
       <li><?php $f->l_text_field_d('email'); ?> </li>
       <li><?php $f->l_status_field_d('status'); ?> </li>
@@ -35,7 +38,7 @@
       ?></div>
     </div>
     <div id="tabsHeader-3" class="tabContent">
-     <div> 
+     <div>
       <div id="comments">
        <div id="comment_list">
         <?php echo!(empty($comments)) ? $comments : ""; ?>
@@ -68,7 +71,7 @@
    <div class="tabContainer">
     <div id="tabsLine-1" class="tabContent">
      <table class="form_line_data_table">
-      <thead> 
+      <thead>
        <tr>
         <th><?php echo gettext('Action') ?></th>
         <th><?php echo gettext('Line Id') ?>#</th>
@@ -89,17 +92,17 @@
          $emp_details_l = hr_employee::find_by_id($hr_team_line->member_employee_id);
          $hr_team_line->member_employee_name = $emp_details_l->first_name . ' ' . $emp_details_l->last_name;
         }
-        ?>         
+        ?>
         <tr class="hr_team_line<?php echo $count ?>">
          <td><?php
-          echo ino_inline_action($$class_second->hr_team_line_id, array('option_line_code' => $hr_team_header->hr_team_header_id));
+          echo ino_inline_action($$class_second->hr_team_line_id, array('hr_team_header_id' => $hr_team_header->hr_team_header_id));
           ?>
          </td>
          <td><?php $f->text_field_wid2sr('hr_team_line_id'); ?></td>
-         <td><?php
-          echo $f->val_field('member_employee_name', $$class_second->member_employee_name, '', '', 'vf_select_member_employee_name employee_name', '', '', 'hr_employee_v', 'employee_name');
-          echo $f->hidden_field_withCLass('member_employee_id', $$class_second->member_employee_id, 'employee_id');
-          ?><i class="generic g_select_employee_name select_popup clickable fa fa-search" data-class_name="hr_employee_v"></i></td>
+            <td><?php
+                echo $f->val_field('member_employee_name', $$class_second->member_employee_name, '', '', 'vf_select_member_employee_name employee_name', '', '', 'hr_employee_v', 'employee_name');
+                echo $f->hidden_field_withCLass('member_employee_id', $$class_second->member_employee_id, 'hr_employee_id');
+                ?><i class="generic g_select_employee_name select_popup clickable fa fa-search" data-class_name="hr_employee_v"></i></td>
          <td><?php echo $f->select_field_from_object('region', sys_value_group_line::find_by_parent_id($team_reg_vg_id), 'sys_value_group_line_id', 'code_value', $$class_second->region); ?></td>
          <td><?php echo $f->select_field_from_object('role', hr_team_header::hr_role(), 'option_line_code', 'option_line_value', $$class_second->role); ?></td>
          <td><?php echo $f->select_field_from_array('responsibility', hr_team_line::$responsibility_a, $$class_second->responsibility); ?></td>
