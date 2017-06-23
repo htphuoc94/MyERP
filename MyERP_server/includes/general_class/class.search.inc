@@ -514,7 +514,7 @@ class search extends dbObject {
 	$search_form_statement .="<li><input type=\"hidden\" form=\"$this->_form_name\" name=\"function_name\" value=\"$function_name\" class=\"$srch_div_cls function_name hidden\" ></li>";
 	$search_form_statement .="<li><input type=\"hidden\" form=\"$this->_form_name\" name=\"report_name\" value=\"$report_name\" class=\"$srch_div_cls report_name hidden\" ></li>";
 	$search_form_statement .="<li><input type=\"hidden\" form=\"$this->_form_name\" name=\"search_class_name\" value=\"$class\" class=\"$srch_div_cls class_name hidden\" ></li>";
-	$search_form_statement .="<li><input type=\"button\" form=\"$this->_form_name\" name=\"reset_class_name\" value=\"" . gettext('Reset All') . "\" class=\"$srch_div_cls reset btn btn-default\" ></li>";
+	$search_form_statement .="<li><input type=\"button\" form=\"$this->_form_name\" name=\"reset_class_name\" value=\"" . gettext('  Reset All') . "\" class=\"$srch_div_cls reset btn btn-default\" ></li>";
 	$search_form_statement .="<li><input type=\"submit\" form=\"$this->_form_name\" name=\"submit_search\" class=\"$srch_div_cls btn btn-default\" value=\"" . gettext('Search') . "\" id=\"search_submit_btn\"></li>";
 	$search_form_statement .="</ul>";
 	$search_form_statement .="</div>";
@@ -619,6 +619,24 @@ class search extends dbObject {
 //	$program_form_statement .= '<li><input type="button" class="add button" id="new_search_criteria_add" value="Add"></li>';
 	$program_form_statement .=$this->_add_hidden_fields();
 	$program_form_statement .= "</ul>";
+     $program_form_statement .="<ul class=\"program form_buttons\">";
+     //add the hidden fields if any
+     $program_form_statement .="<li><input type=\"button\" form=\"$this->_form_name\" name=\"reset_program\" class=\"reset program btn btn-default\" value=\"" . gettext('Reset All') . "\" id=\"reset_program\"></li>";
+//  $program_form_statement .= "<li><a href=\"$this->_form_post_link.php?class_name=$class&mode=$this->_search_mode&show_block=$this->_show_block\" "
+//   . " class=\"reset button\" id=\"search_reset_btn\" name=\"class_name\" value=\"$class\" > Reset All</a></li>";
+     $program_form_statement .="<li><input type=\"hidden\" form=\"$this->_form_name\" name=\"class_name\" value=\"$class\" class=\"search class_name hidden\" ></li>";
+     if ($this->_searching_class != 'convertToProd') {
+         if (!empty($program_type) && ($program_type == 'download_report')) {
+             $program_form_statement .="<li><input type=\"button\" form=\"$this->_form_name\" name=\"submit_program\" class=\"program btn btn-default\" value=\"" . gettext('Generate Report') . "\" id=\"generate_report\"></li>";
+         } else {
+             $program_form_statement .="<li><input type=\"button\" form=\"$this->_form_name\" name=\"submit_program\" class=\"program btn btn-default\" value=\"" . gettext('Submit') . "\" id=\"save_program\"></li>";
+         }
+     } else if (convertToProd::$allow_conversion) {
+         $program_form_statement .="<li><input type=\"button\" form=\"$this->_form_name\" name=\"submit_program\" class=\"program btn btn-default\" value=\"" . gettext('Submit') . "\" id=\"save_program\"></li>";
+     } else {
+         $program_form_statement .="<li class='error'>The submit button is disabled for security reason.<br>Set allow_conversion variable to true in convertToProd class to use this program</li>";
+     }
+     $program_form_statement .="</ul>";
 	$program_form_statement .= '</fieldset>';
 //end of first ul
 //$f = new inoform();
@@ -639,24 +657,7 @@ class search extends dbObject {
 
 //start of form button ul
 	$program_form_statement .="</div><div class='row'>";
-	$program_form_statement .="<ul class=\"program form_buttons\">";
-	//add the hidden fields if any
-	$program_form_statement .="<li><input type=\"button\" form=\"$this->_form_name\" name=\"reset_program\" class=\"reset program btn btn-default\" value=\"" . gettext('Reset All') . "\" id=\"reset_program\"></li>";
-//  $program_form_statement .= "<li><a href=\"$this->_form_post_link.php?class_name=$class&mode=$this->_search_mode&show_block=$this->_show_block\" "
-//   . " class=\"reset button\" id=\"search_reset_btn\" name=\"class_name\" value=\"$class\" > Reset All</a></li>";
-	$program_form_statement .="<li><input type=\"hidden\" form=\"$this->_form_name\" name=\"class_name\" value=\"$class\" class=\"search class_name hidden\" ></li>";
-	if ($this->_searching_class != 'convertToProd') {
-	 if (!empty($program_type) && ($program_type == 'download_report')) {
-		$program_form_statement .="<li><input type=\"button\" form=\"$this->_form_name\" name=\"submit_program\" class=\"program btn btn-default\" value=\"" . gettext('Generate Report') . "\" id=\"generate_report\"></li>";
-	 } else {
-		$program_form_statement .="<li><input type=\"button\" form=\"$this->_form_name\" name=\"submit_program\" class=\"program btn btn-default\" value=\"" . gettext('Submit') . "\" id=\"save_program\"></li>";
-	 }
-	} else if (convertToProd::$allow_conversion) {
-	 $program_form_statement .="<li><input type=\"button\" form=\"$this->_form_name\" name=\"submit_program\" class=\"program btn btn-default\" value=\"" . gettext('Submit') . "\" id=\"save_program\"></li>";
-	} else {
-	 $program_form_statement .="<li class='error'>The submit button is disabled for security reason.<br>Set allow_conversion variable to true in convertToProd class to use this program</li>";
-	}
-	$program_form_statement .="</ul>";
+
 	$program_form_statement .="</form></div> ";
 	return $program_form_statement;
  }

@@ -5354,7 +5354,7 @@ $(document).ready(function () {
 
 
  $('body').on('click', '#reset_program', function () {
-  $(this).closest('form').find(':input').not('.button').val('');
+  $(this).closest('form').find(':input:not(.btn)').not('.button').val('');
  });
 
  $('body').on('click', '.right_bar_navigation_menu', function () {
@@ -5986,7 +5986,7 @@ $(document).ready(function () {
  });
 
  $('body').on('click', '.search.reset ', function () {
-  $(this).closest('form').find(':input:not(.btn, .readonly, .hidden)').not('readonly').val('');
+  $(this).closest('form').find(':input:not(.btn)').not('readonly').val('');
  });
 
 //serial lot form flip
